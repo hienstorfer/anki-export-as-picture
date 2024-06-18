@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <!-- Link to Google Fonts to use the Roboto font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        <!-- Inject the CSS content from the configured CSS file -->
+        {{ css }}
+        body {
+            /* Center the content both vertically and horizontally */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* 100% of the viewport height */
+            margin: 0;
+            font-family: 'Roboto', sans-serif; /* Use the Roboto font */
+        }
+    </style>
+</head>
+
+<body>
+<!-- Check if the note type is not one of the Image Occlusion types -->
+{% if note_type not in ['Image Occlusion', 'Image Occlusion Enhanced', 'Image Occlusion Enhanced+'] %}
+    <table class="custom-table-left">
+        <!-- Loop through each field in the fields dictionary -->
+        {% for field, value in fields.items() %}
+            <!-- Only display non-empty fields -->
+            {% if value != "" %}
+            <tr>
+                <!-- Convert the field name to lowercase for CSS class and display its value -->
+                <td><div class="{{ field|lower }}">{{ value }}</div></td>
+            </tr>
+            {% endif %}
+        {% endfor %}
+    </table>
+{% endif %}
+
+<!-- Check if the note type is one of the Image Occlusion types -->
+{% if note_type in ['Image Occlusion', 'Image Occlusion Enhanced', 'Image Occlusion Enhanced+'] %}
+    <table class="custom-table">
+        <tr>
+            <!-- Display the content of the Header field, marked safe to allow HTML -->
+            <td>{{ fields['Header']|safe }}</td>
+        </tr>
+        <tr>
+            <!-- Display the content of the Image field, marked safe to allow HTML -->
+            <td>{{ fields['Image']|safe }}</td>
+        </tr>
+    </table>
+{% endif %}
+</body>
+</html>

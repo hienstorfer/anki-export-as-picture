@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+    <!-- Link to Google Fonts to use the Roboto font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        <!-- Inject the CSS content from the configured CSS file -->
+        {{ css }}
+        body {
+            /* Center the content both vertically and horizontally */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* 100% of the viewport height */
+            margin: 0;
+            font-family: 'Roboto', sans-serif; /* Use the Roboto font */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Main table for displaying card content -->
+    <table class="custom-table-left">
+        <!-- Row for displaying the CardID field, marked safe to allow HTML -->
+        <tr>
+            <td>{{ fields['CardID']|safe }}</td>
+        </tr>
+        <!-- Row for displaying the Question field, marked safe to allow HTML -->
+        <tr>
+            <td>{{ fields['Question']|safe }}</td>
+        </tr>
+        <!-- Row for displaying the list of answers -->
+        <tr>
+            <td>
+            <ul>
+                <!-- List item for displaying the Answer1 field, marked safe to allow HTML -->
+                <li>{{ fields['Answer1']|safe }}</li>
+                <!-- Conditionally display additional answers if they are not empty -->
+                {% if fields.get('Answer2', '') != "" %}<li>{{ fields['Answer2']|safe }}</li>{% endif %}
+                {% if fields.get('Answer3', '') != "" %}<li>{{ fields['Answer3']|safe }}</li>{% endif %}
+                {% if fields.get('Answer4', '') != "" %}<li>{{ fields['Answer4']|safe }}</li>{% endif %}
+                {% if fields.get('Answer5', '') != "" %}<li>{{ fields['Answer5']|safe }}</li>{% endif %}
+                {% if fields.get('Answer6', '') != "" %}<li>{{ fields['Answer6']|safe }}</li>{% endif %}
+                {% if fields.get('Answer7', '') != "" %}<li>{{ fields['Answer7']|safe }}</li>{% endif %}
+                {% if fields.get('Answer8', '') != "" %}<li>{{ fields['Answer8']|safe }}</li>{% endif %}
+                {% if fields.get('Answer9', '') != "" %}<li>{{ fields['Answer9']|safe }}</li>{% endif %}
+                {% if fields.get('Answer10', '') != "" %}<li>{{ fields['Answer10']|safe }}</li>{% endif %}
+            </ul>
+            </td>
+        </tr>
+        <!-- Conditionally display the Comment field if it is not empty, marked safe to allow HTML -->
+        {% if fields['Comment'] != "" %}
+            <tr>
+                <td>{{ fields['Comment']|safe }}</td>
+            </tr>
+        {% endif %}
+    </table>
+</body>
+</html>

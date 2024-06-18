@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white; /* Ensure the background is white */
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.custom-table td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+cloze {
+    font-weight: 600;
+    color: blue
+}
+
+.one-img {
+padding-top: 3px;
+width: 100%;
+max-width: 1000px;
+text-align: center;
+}
+
+.one-img img {
+  display: block;
+  margin: 0 auto; /* This will center the images horizontally */
+  max-width: 100%;
+}
+
+.custom-table-noborder {
+max-width: 1000px;
+width: 100%;
+border-collapse: separate;
+text-align: center;
+margin: auto; /* Center-align the table */
+}
+
+/* Common styles for tables */
+.custom-table {
+max-width: 1200px;
+
+width: 100%;
+border-collapse: separate;
+border: 1px solid black; /* Add border for better visibility */
+text-align: center;
+margin: auto; /* Center-align the table */
+}
+
+.custom-table td {
+	  border: 1px solid black;
+    word-wrap: break-word; /* Allow long words to be broken and wrap onto the next line */
+    overflow-wrap: break-word; /* Standard name for the CSS property */
+    text-align: center; /* Text innerhalb der Zellen zentrieren */
+}
+
+.custom-table-left {
+max-width: 1200px;
+
+width: 100%;
+border-collapse: separate;
+border: 1px solid black; /* Add border for better visibility */
+text-align: left;
+margin: auto; /* Center-align the table */
+}
+
+.custom-table-left td {
+	  border: 1px solid black;
+    word-wrap: break-word; /* Allow long words to be broken and wrap onto the next line */
+    overflow-wrap: break-word; /* Standard name for the CSS property */
+    text-align: left; /* Text innerhalb der Zellen zentrieren */
+}
+
+
+
+.custom-table i {
+    font-style: normal; /* Set font style to normal to remove italic */
+}
+
+.custom-table tr {
+    min-height: 100px; /* Adjust the minimum height as needed */
+}
+
+/* Specific styles for tables with 2 columns */
+.custom-table.two-columns img {
+width: 100%; /* Make images fill the cell */
+}
+
+.custom-table.two-columns td {
+    width: 50%; /* Set equal width for the two columns */
+    min-width: 670px; /* Set the minimum width for the table columns */
+    max-width: 670px; /* Set the minimum width for the table columns */
+    word-wrap: break-word; /* Ensure long words are wrapped */
+}
+.custom-table.two-columns {
+font-size: 32px; /* Adjust the font size as needed */
+font-weight: 500;
+}
