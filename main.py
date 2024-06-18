@@ -11,9 +11,8 @@ from aqt import gui_hooks
 from jinja2 import Template
 from bs4 import BeautifulSoup
 
-# Ensure the local library path is included
-addon_id = mw.addonManager.addonFromModule(__name__)
-addon_dir = mw.addonManager.addonFolder(addon_id)
+# Get the add-on directory dynamically
+addon_dir = os.path.dirname(__file__)
 sys.path.append(os.path.join(addon_dir, 'lib'))
 
 # Now we can import the Html2Image module
