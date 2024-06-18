@@ -31,7 +31,7 @@ The `config.json` file is used to configure various settings for the Anki2Images
 }
 ```
 
-### Settings
+### config.json settings
 1. debug
 Type: boolean
 Description: Enables or disables debug mode. When enabled, temporary html file will not be deleted and additional debug information will be logged. 
@@ -80,3 +80,8 @@ Description: A list of tuples that define specific templates and CSS files for s
    - template: The filename of the HTML template to use for this note type and card type.
    - css: The filename of the CSS file to use for this note type and card type.
 
+### html templates
+please refer to jinja documentation
+https://jinja.palletsprojects.com/en/3.1.x/
+
+### autocrop 
