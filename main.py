@@ -12,7 +12,9 @@ from jinja2 import Template
 from bs4 import BeautifulSoup
 
 # Ensure the local library path is included
-sys.path.append(os.path.join(os.path.dirname(__file__), 'lib'))
+addon_id = mw.addonManager.addonFromModule(__name__)
+addon_dir = mw.addonManager.addonFolder(addon_id)
+sys.path.append(os.path.join(addon_dir, 'lib'))
 
 # Now we can import the Html2Image module
 from html2image import Html2Image
@@ -35,7 +37,7 @@ def save_meta_config(config):
 config = load_meta_config()
 
 # Ensure the logging directory exists
-log_dir = os.path.join(mw.pm.addonFolder(), 'anki2images')
+log_dir = os.path.join(addon_dir, 'logs')
 os.makedirs(log_dir, exist_ok=True)
 
 log_file = os.path.join(log_dir, 'error_log.txt')
@@ -117,7 +119,7 @@ def get_template_and_css(note_type, card_type):
 
 def generate_html_content(card_id, template_filename, css, note_type, card_type, media_folder, note_fields):
     try:
-        template = load_html_template(os.path.join(os.path.dirname(__file__), template_filename))
+        template = load_html_template(os.path.join(addon_dir, template_filename))
         resolution = tuple(config.get("resolution", [1920, 1080]))  # Use resolution from config
 
         log_debug_message(f"Using template: {template_filename}")
@@ -157,7 +159,6 @@ def export_notes_as_images(browser: Browser):
     log_debug_message("Starting export process...")
     log_debug_message(f"Configuration: {config}")
 
-    addon_folder = os.path.dirname(__file__)
     output_folder = QFileDialog.getExistingDirectory(caption="Select Output Folder", directory=config.get("last_output_folder", ""))
     if not output_folder:
         log_debug_message("No output folder selected.")
@@ -208,7 +209,7 @@ def export_notes_as_images(browser: Browser):
             note_fields = {field: add_media_path_to_images(note[field], media_folder) for field in note.keys() if field not in exclude_fields}
 
             template_filename, css_filename = get_template_and_css(note_type, card_type)
-            css_file_path = os.path.join(addon_folder, css_filename)
+            css_file_path = os.path.join(addon_dir, css_filename)
             try:
                 css_content = load_css(css_file_path)
                 if is_cloze_note_type(note):
