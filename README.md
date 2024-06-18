@@ -1,6 +1,7 @@
 # anki-export-as-picture
-Export Anki cards as picture
-
+Export Anki cards as picture with flexible jinja2 templates ans CSS styling
+You can use anki styling from anki card template CSS section.
+Anki templates can be easily transformed to jinja2 templates with ChatGPT.
 
 # Anki2Images Add-On Configuration Guide
 
