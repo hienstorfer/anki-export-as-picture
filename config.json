@@ -1,0 +1,21 @@
+{
+  "debug": false,
+  "resolution": [
+    2000,
+    2000
+  ],
+  "last_output_folder": "C:/Users/",
+  "replace_cloze": true,
+  "exclude_fields": [],
+  "default_template": "template.html",
+  "default_css": "styles.css",
+  "note_card_templates": [
+    {
+      "note_type": "multiple-choice",
+      "card_type": "Question",
+      "template": "template_multiple_choice.html",
+      "css": "styles.css"
+    }
+  ],
+  "auto_crop": false
+}

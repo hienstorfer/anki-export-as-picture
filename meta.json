@@ -1,0 +1,36 @@
+{
+  "name": "Anki2Images",
+  "mod": 0,
+  "min_point_version": 0,
+  "max_point_version": 231200,
+  "branch_index": 0,
+  "disabled": false,
+  "conflicts": [],
+  "update_enabled": false,
+  "human_version": "0.7",
+  "folders": [
+    ".",
+    "lib"
+  ],
+  "config": {
+    "debug": false,
+    "resolution": [
+      2000,
+      2000
+    ],
+    "last_output_folder": "",
+    "replace_cloze": true,
+    "exclude_fields": [ ],
+    "default_template": "template.html",
+    "default_css": "styles.css",
+    "note_card_templates": [
+      {
+        "card_type": "SingleChoice",
+        "css": "styles_LanguageLearning.css",
+        "note_type": "MultipleChoice",
+        "template": "template_multiple_choice.html"
+      }
+    ],
+    "auto_crop": false
+  }
+}
