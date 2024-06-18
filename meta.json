@@ -1,13 +1,19 @@
 {
   "name": "Anki2Images",
-  "mod": 0,
-  "min_point_version": 0,
-  "max_point_version": 231200,
+  "id": "anki2images",
+   "description": "An Anki add-on that allows users to export Anki cards as images with customizable HTML templates and CSS.",
+    "version": "0.7",
+    "author": "Philipp Hienstorfer",
+  "readme": "README.md",
+    "mod": 1718703125538,
+  "min_point_version": 24,
+  "max_point_version": 24,
   "branch_index": 0,
   "disabled": false,
   "conflicts": [],
-  "update_enabled": false,
+  "update_enabled": true,
   "human_version": "0.7",
+  "homepage": "https://github.com/hienstorfer/anki-export-as-picture",
   "folders": [
     ".",
     "lib"

@@ -134,3 +134,7 @@ This template defines the HTML structure used to render Anki cards as images. Be
 ### autocrop 
 for autocrop, you need to download and install ImageMagick commandline tool.
 Windows: In system path, you need to add the path to the 
+
+# Support
+Please send your requests though github ticket system.
+https://github.com/hienstorfer/anki-export-as-picture/issues
