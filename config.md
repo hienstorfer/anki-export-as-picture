@@ -79,9 +79,8 @@ Description: A list of tuples that define specific templates and CSS files for s
    - card_type: The card type name.
    - template: The filename of the HTML template to use for this note type and card type.
    - css: The filename of the CSS file to use for this note type and card type.
-
 ### html templates
 please refer to jinja documentation
 https://jinja.palletsprojects.com/en/3.1.x/
-
 ### autocrop 
+ImageMagick is needed: https://imagemagick.org/

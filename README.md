@@ -133,6 +133,7 @@ This template defines the HTML structure used to render Anki cards as images. Be
 
 ### autocrop 
 for autocrop, you need to download and install ImageMagick commandline tool.
+https://imagemagick.org/
 Windows: In system path, you need to add the path to the 
 
 # Support
