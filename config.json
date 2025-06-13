@@ -83,6 +83,12 @@
             "css": "styles.css",
             "note_type": "SAP-MultipleChoice",
             "template": "template_sap_multiple_choice.html"
+        },
+        {
+            "card_type": "TCode",
+            "css": "styles.css",
+            "note_type": "SAP-Transaction",
+            "template": "template_TCode_multiple_choice.html"
         }
     ],
     "replace_cloze": true,
