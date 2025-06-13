@@ -1,0 +1,630 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white; /* Ensure the background is white */
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.custom-table td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+cloze {
+    font-weight: 600;
+    color: blue
+}
+
+:root{
+
+--color-male-inan: blue;
+--color-male: blue;
+--color-male-anima: #6495ED;
+--color-female: red;
+--color-neuter: green;
+--bcolor-male-inan: LightCyan;
+--bcolor-male-anima: LightCyan;
+--bcolor-female: #FFEAE9;
+--bcolor-neuter: #ccffb3;
+--bcolor-adverb: #ccffb3;
+--cr-Nom: green;
+--cr-Gen: #C3834D;
+--cr-Dat: DeepPink;
+--cr-Acc: red;
+--cr-Voc: brown;
+--cr-Loc: blue;
+--cr-Ins: purple;
+--bcolor-past:LightYellow;
+--bcolor-future:#F0FFF0;
+--color-past:grey;
+--color-future:green;
+--color-person:orange;
+--color-imperative:orange;
+--color-adverb:brown;
+--cr-superlative: orange;
+--cr-question: brown;
+--color-cond-present: purple;
+}
+
+@font-face {
+  font-family: NotoSans;
+  src: url("_NotoSans.ttf");
+}
+@font-face {
+  font-family: SourceSans;
+  src: url("_SourceSans3.ttf");
+}
+@font-face {
+  font-family: SourceSansItalic;
+  src: url("_SourceSans3Italic.ttf");
+}
+@font-face {
+  font-family: Lora;
+  src: url("_Lora.ttf");
+}
+
+.mobile .card {
+ font-family: NotoSans;
+ font-size: 14px;
+ text-align: center;
+ color: black;
+ background-color: white;
+}
+
+.win .card {
+ font-family: NotoSans;
+ font-size: 20px;
+ text-align: center;
+ color: black;
+ background-color: white;
+}
+
+
+
+.StyleCardID
+{
+    font-family: arial;
+    font-size: 14px;
+    text-align: center;
+    color: black;
+    background-color: white;
+}
+
+.StyleSentence
+{
+    font-family: arial;
+    font-size: 14px;
+    text-align: left;
+    color: darkblue;
+    background-color: white;
+}
+
+.StyleWord
+{
+    font-family: arial;
+    font-size: 16px;
+    text-align: left;
+    color: darkblue;
+    background-color: white;
+}
+
+.StyleHint
+{
+    font-family: arial;
+    font-size: 16px;
+    text-align: left;
+    color: darkblue;
+    background-color: white;
+}
+
+
+.StyleContext
+{
+    font-family: arial;
+    font-size: 16px;
+    text-align: left;
+    color: darkblue;
+    background-color: white;
+}
+.StyleDialogue
+{
+    font-family: arial;
+    font-size: 16px;
+    text-align: left;
+    color: darkred;
+    background-color: white;
+}
+
+.one-img {
+padding-top: 3px;
+width: 100%;
+max-width: 1000px;
+text-align: center;
+}
+
+.one-img img {
+  display: block;
+  margin: 0 auto; /* This will center the images horizontally */
+  max-width: 100%;
+}
+
+.custom-table-noborder {
+max-width: 1000px;
+width: 100%;
+border-collapse: separate;
+text-align: center;
+margin: auto; /* Center-align the table */
+}
+
+/* Common styles for tables */
+.custom-table {
+max-width: 1200px;
+
+width: 100%;
+border-collapse: separate;
+border: 1px solid black; /* Add border for better visibility */
+text-align: center;
+margin: auto; /* Center-align the table */
+}
+
+.custom-table td {
+	  border: 1px solid black;
+    word-wrap: break-word; /* Allow long words to be broken and wrap onto the next line */
+    overflow-wrap: break-word; /* Standard name for the CSS property */
+    text-align: center; /* Text innerhalb der Zellen zentrieren */
+}
+
+.custom-table-left {
+max-width: 1200px;
+
+width: 100%;
+border-collapse: separate;
+border: 1px solid black; /* Add border for better visibility */
+text-align: left;
+margin: auto; /* Center-align the table */
+}
+
+.custom-table-left td {
+	  border: 1px solid black;
+    word-wrap: break-word; /* Allow long words to be broken and wrap onto the next line */
+    overflow-wrap: break-word; /* Standard name for the CSS property */
+    text-align: left; /* Text innerhalb der Zellen zentrieren */
+}
+
+
+
+.custom-table i {
+    font-style: normal; /* Set font style to normal to remove italic */
+}
+
+.custom-table tr {
+    min-height: 100px; /* Adjust the minimum height as needed */
+}
+
+/* Specific styles for tables with 2 columns */
+.custom-table.two-columns img {
+width: 100%; /* Make images fill the cell */
+}
+
+.custom-table.two-columns td {
+    width: 50%; /* Set equal width for the two columns */
+    min-width: 670px; /* Set the minimum width for the table columns */
+    max-width: 670px; /* Set the minimum width for the table columns */
+    word-wrap: break-word; /* Ensure long words are wrapped */
+}
+.custom-table.two-columns {
+font-size: 32px; /* Adjust the font size as needed */
+font-weight: 500;
+}
+
+
+/* Specific styles for tables with 3 columns */
+.custom-table.three-columns img {
+width: 100%; /* Make images fill the cell */
+}
+.custom-table.three-columns td {
+    width: 33.33%; /* Set equal width for the three columns */
+    min-width: 440px; /* Set the minimum width for the table columns */
+    max-width: 440px; /* Set the minimum width for the table columns */
+}
+.custom-table.three-columns {
+font-size: 28px; /* Adjust the font size as needed */
+font-weight: 500;
+}
+
+/* Specific styles for tables with 4 columns */
+.custom-table.four-columns img {
+width: 100%; /* Make images fill the cell */
+}
+.custom-table.four-columns td {
+    width: 25%; /* Set equal width for the three columns */
+}
+.win .custom-table.four-columns {
+font-size: 13px;
+}
+
+.mobile .custom-table.four-columns {
+font-size: 8px;
+font-weight: 500;
+}
+
+
+.synonym-cell deletethisthing {
+    text-align: center; /* Center-align text within the cell */
+    border: 1px solid black;
+}
+
+.synonym-cell i {
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+.synonym-picture img{
+   width: 100%;
+   max-width: 1000px;
+}
+
+
+
+.synonym-cell synonym, .synonym-cell antonym {
+   font-weight: 600;
+		background-color:LightYellow
+}
+
+.synonym-cell antonym::after
+ { content:"antonym"; vertical-align: super; color:blue; font-size: x-small;}
+
+invisible {
+    display: none;
+}
+
+
+sex-male-singular, sex-male-singular-animated, sex-male-singular-animated-prefix, sex-male-plural, sex-male-singular-prefix, sex-male-plural-prefix  { color: var(--color-male-inan); background-color: var(--bcolor-male-inan); font-weight: 550; }
+sex-male-singular::after { content:"\2642"; vertical-align: super;color: var(--color-male-inan); font-variant: small-caps; font-size: small;}
+sex-male-singular-animated::after { content:"\2642 anim"; vertical-align: super;color: var(--color-male-anima); font-variant: small-caps; font-size: small;}
+sex-male-plural::after { content:"\2642\2640"; vertical-align: super;color: var(--color-male-inan); font-variant: small-caps; font-size: small;}
+sex-male-singular-prefix::before { content:"\2642"; vertical-align: super;color: var(--color-male-inan); font-variant: small-caps; font-size: small;}
+sex-male-plural-prefix::before { content:"\2642\2640"; vertical-align: super;color: var(--color-male-inan); font-variant: small-caps; font-size: small;}
+
+sex-female-singular, sex-female-plural, sex-female-singular-prefix, sex-female-plural-prefix { color: var(--color-female); background-color: var(--bcolor-female); font-weight: 550;}
+sex-female-singular::after { content:"\2640"; vertical-align: super;color: var(--color-female); font-variant: small-caps; font-size: small;}
+sex-female-plural::after { content:"\2640\2640"; vertical-align: super;color: var(--color-female); font-variant: small-caps; font-size: small;}
+sex-female-singular-prefix::before { content:"\2640"; vertical-align: super;color: var(--color-female); font-variant: small-caps; font-size: small;}
+sex-female-plural-prefix::before { content:"\2640\2640"; vertical-align: super;color: var(--color-female); font-variant: small-caps; font-size: small;}
+
+sex-neuter-singular, sex-neuter-plural, sex-neuter-singular-prefix, sex-neuter-plural-prefix { color: var(--color-neuter); background-color: var(--bcolor-neuter); font-weight: 550;}
+sex-neuter-singular::after { content:"\26A9"; vertical-align: super;color: var(--color-neuter); font-variant-caps: petite-caps; font-size: small;}
+sex-neuter-plural::after { content:"\26A9\26A9"; vertical-align: super;color: var(--color-neuter); font-variant: small-caps; font-size: small;}
+sex-neuter-singular-prefix::before { content:"\26A9"; vertical-align: super;color: var(--color-neuter); font-variant-caps: petite-caps; font-size: small;}
+sex-neuter-plural-prefix::before { content:"\26A9\26A9"; vertical-align: super;color: var(--color-neuter); font-variant: small-caps; font-size: small;}
+
+sex-male-singular, sex-male-plural, sex-female-singular, sex-female-plural, sex-neuter-singular, sex-neuter-plural { background-color: LightYellow ; font-weight: 650;}
+
+person-1st-singular, person-2nd-singular, person-3rd-singular, person-1st-plural, person-2nd-plural, person-3rd-plural {color: var(--color-person);}
+person-3rd-singular-female, person-3rd-plural-female {color: var(--color-female);}
+person-3rd-singular-male, person-3rd-plural-male {color: var(--color-male);}
+person-3rd-singular-neuter, person-3rd-plural-neuter {color: var(--color-neuter);}
+
+person-1st-singular::after { content: "1S"; vertical-align: super; color: var(--color-person); font-variant-caps: petite-caps; font-size: small;}
+person-2nd-singular::after { content: "2S"; vertical-align: super; color: var(--color-person); font-variant-caps: petite-caps; font-size: small;}
+person-3rd-singular::after { content: "3S"; vertical-align: super; color: var(--color-person); font-variant-caps: petite-caps; font-size: small;}
+person-3rd-singular-neuter::after { content: "3S\26A9"; vertical-align: super; color: var(--color-neuter); font-variant-caps: petite-caps; font-size: small;}
+person-3rd-singular-male::after { content: "3S\2642"; vertical-align: super; color: var(--color-male); font-variant-caps: petite-caps; font-size: small;}
+person-3rd-singular-female::after { content: "3S\2640"; vertical-align: super; color: var(--color-female); font-variant-caps: petite-caps; font-size: small;}
+person-1st-plural::after { content: "1P"; vertical-align: super; color: var(--color-person); font-variant-caps: petite-caps; font-size: small;}
+person-2nd-plural::after { content: "2P"; vertical-align: super; color: var(--color-person); font-variant-caps: petite-caps; font-size: small;}
+person-3rd-plural-male::after { content: "3P\2642\2640"; vertical-align: super; color: var(--color-male); font-variant-caps: petite-caps; font-size: small;}
+person-3rd-plural-female::after { content: "3P\2640\2640"; vertical-align: super; color: var(--color-female); font-variant-caps: petite-caps; font-size: small;}
+person-3rd-plural-neuter::after { content: "3P\26A9\26A9"; vertical-align: super; color: var(--color-neuter); font-variant-caps: petite-caps; font-size: small;}
+person-3rd-plural::after { content: "3P"; vertical-align: super; color: var(--color-person); font-variant-caps: petite-caps; font-size: small;}
+
+
+person-1st-singular-prefix, person-2nd-singular-prefix, person-3rd-singular-prefix, person-1st-plural-prefix, person-2nd-plural-prefix, person-3rd-plural-prefix {color: var(--color-person); background-color: var(--bcolor-past);}
+person-3rd-singular-female-prefix, person-3rd-plural-female-prefix {color: var(--color-female); background-color: var(--bcolor-female);}
+person-3rd-singular-male-prefix, person-3rd-plural-male-prefix {color: var(--color-male); background-color: var(--bcolor-male-inan);}
+person-3rd-singular-neuter-prefix, person-3rd-plural-neuter-prefix {color: var(--color-neuter); background-color: var(--bcolor-neuter);}
+
+person-1st-singular-prefix::before { content: "1S"; vertical-align: super; color: var(--color-person); font-variant-caps: petite-caps; font-size: small;}
+person-2nd-singular-prefix::before { content: "2S"; vertical-align: super; color: var(--color-person); font-variant-caps: petite-caps; font-size: small;}
+person-3rd-singular-prefix::before { content: "3S"; vertical-align: super; color: var(--color-person); font-variant-caps: petite-caps; font-size: small;}
+person-3rd-singular-neuter-prefix::before { content: "3S\26A9"; vertical-align: super; color: var(--color-neuter); font-variant-caps: petite-caps; font-size: small;}
+person-3rd-singular-male-prefix::before { content: "3S\2642"; vertical-align: super; color: var(--color-male); font-variant-caps: petite-caps; font-size: small;}
+person-3rd-singular-female-prefix::before { content: "3S\2640"; vertical-align: super; color: var(--color-female); font-variant-caps: petite-caps; font-size: small;}
+person-1st-plural-prefix::before { content: "1P"; vertical-align: super; color: var(--color-person); font-variant-caps: petite-caps; font-size: small;}
+person-2nd-plural-prefix::before { content: "2P"; vertical-align: super; color: var(--color-person); font-variant-caps: petite-caps; font-size: small;}
+person-3rd-plural-male-prefix::before { content: "3P\2642\2640"; vertical-align: super; color: var(--color-male); font-variant-caps: petite-caps; font-size: small;}
+person-3rd-plural-female-prefix::before { content: "3P\2640\2640"; vertical-align: super; color: var(--color-female); font-variant-caps: petite-caps; font-size: small;}
+person-3rd-plural-neuter-prefix::before { content: "3P\26A9\26A9"; vertical-align: super; color: var(--color-neuter); font-variant-caps: petite-caps; font-size: small;}
+person-3rd-plural-prefix::before { content: "3P"; vertical-align: super; color: var(--color-person); font-variant-caps: petite-caps; font-size: small;}
+
+
+case-prefix-nominative, case-nominative, case-nominative-male-singular, case-nominative-female-singular, case-nominative-neuter-singular, case-nominative-male-plural, case-nominative-female-plural, case-nominative-neuter-plural, infinitive { color: var(--cr-Nom); font-weight: 600;}
+case-prefix-genetive, case-genetive, case-genetive-male-singular, case-genetive-female-singular, case-genetive-neuter-singular, case-genetive-male-plural, case-genetive-female-plural, case-genetive-neuter-plural  { color: var(--cr-Gen);font-weight: 600;}
+case-dative-prefix, case-dative, case-dative-male-singular, case-dative-female-singular, case-dative-neuter-singular, case-dative-male-plural, case-dative-female-plural, case-dative-neuter-plural { color: var(--cr-Dat); font-weight: 600; }
+case-prefix-accusative, case-accusative, case-accusative-male-thing-singular, case-accusative-female-singular, case-accusative-neuter-singular, case-accusative-male-plural, case-accusative-female-plural, case-accusative-neuter-plural { color: var(--cr-Acc); font-weight: 600; }
+case-accusative-male-living-singular { color: var(--color-male-anima); font-weight: 600; }
+case-prefix-vocative, case-vocative, case-vocative-male-singular-hard, case-vocative-male-singular-soft, case-vocative-female-singular, case-vocative-neuter-singular, case-vocative-male-plural, case-vocative-female-plural, case-vocative-neuter-plural { color: var(--cr-Voc);font-weight: 600;}
+case-prefix-locative, case-locative, case-locative-male-singular, case-locative-female-singular, case-locative-neuter-singular, case-locative-male-plural, case-locative-female-plural, case-locative-neuter-plural { color: var(--cr-Loc);font-weight: 600; }
+case-prefix-instrumental, case-instrumental, case-instrumental-male-singular-hard, case-instrumental-male-singular-soft, case-instrumental-female-singular, case-instrumental-neuter-singular, case-instrumental-male-plural, case-instrumental-female-plural, case-instrumental-neuter-plural { color: var(--cr-Ins);font-weight: 600;}
+
+case-nominative::after { content: "N"; vertical-align: super; color: var(--cr-Nom); font-variant-caps: petite-caps; font-size: small;}
+case-genetive::after { content: "G"; vertical-align: super; color: var(--cr-Gen); font-variant-caps: petite-caps; font-size: small;}
+case-dative::after { content: "D"; vertical-align: super; color: var(--cr-Dat);  font-variant-caps: petite-caps; font-size: small;}
+case-accusative::after { content: "A"; vertical-align: super; color: var(--cr-Acc); font-variant-caps: petite-caps; font-size: small;}
+case-instrumental::after { content: "I"; vertical-align: super; color: var(--cr-Ins); font-variant-caps: petite-caps; font-size: small;}
+case-locative::after { content: "L"; vertical-align: super; color: var(--cr-Loc); font-variant-caps: petite-caps; font-size: small;}
+case-vocative::after { content: "V"; vertical-align: super; color: var(--cr-Voc); font-variant-caps: petite-caps; font-size: small;}
+
+case-prefix-nominative::before { content: "N"; vertical-align: super; color: var(--cr-Nom); font-variant-caps: petite-caps; font-size: small;}
+case-prefix-genetive::before { content: "G"; vertical-align: super; color: var(--cr-Gen); font-variant-caps: petite-caps; font-size: small;}
+case-prefix-dative::before { content: "D"; vertical-align: super; color: var(--cr-Dat);  font-variant-caps: petite-caps; font-size: small;}
+case-prefix-accusative::before { content: "A"; vertical-align: super; color: var(--cr-Acc); font-variant-caps: petite-caps; font-size: small;}
+case-prefix-instrumental::before { content: "I"; vertical-align: super; color: var(--cr-Ins); font-variant-caps: petite-caps; font-size: small;}
+case-prefix-locative::before { content: "L"; vertical-align: super; color: var(--cr-Loc); font-variant-caps: petite-caps; font-size: small;}
+case-prefix-vocative::before { content: "V"; vertical-align: super; color: var(--cr-Voc); font-variant-caps: petite-caps; font-size: small;}
+
+case-nominative-male-singular::after { content: "N\2642"; vertical-align: super; color: var(--cr-Nom); background-color: var(--bcolor-male-inan); font-variant-caps: petite-caps; font-size: small;}
+case-nominative-female-singular::after { content: "N\2640"; vertical-align: super; color: var(--cr-Nom); background-color: var(--bcolor-female) ; font-variant-caps: petite-caps; font-size: small;}
+case-nominative-neuter-singular::after { content: "N\26A9"; vertical-align: super; color: var(--cr-Nom); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+case-nominative-male-plural::after { content: "N\2642\2640"; vertical-align: super; color: var(--cr-Nom); background-color: var(--bcolor-male-inan); font-variant-caps: petite-caps; font-size: small;}
+case-nominative-female-plural::after { content: "N\2640\2640"; vertical-align: super; color: var(--cr-Nom); background-color: var(--bcolor-female) ; font-variant-caps: petite-caps; font-size: small;}
+case-nominative-neuter-plural::after { content: "N\26A9\26A9"; vertical-align: super; color: var(--cr-Nom); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+case-genetive-male-singular::after { content: "G\2642"; vertical-align: super; color: var(--cr-Gen); background-color: var(--bcolor-male-inan); font-variant-caps: petite-caps; font-size: small;}
+case-genetive-female-singular::after { content: "G\2640"; vertical-align: super; color: var(--cr-Gen); background-color: var(--bcolor-female) ; font-variant-caps: petite-caps; font-size: small;}
+case-genetive-neuter-singular::after { content: "G\26A9"; vertical-align: super; color: var(--cr-Gen); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+case-genetive-male-plural::after { content: "G\2642\2640"; vertical-align: super; color: var(--cr-Gen); background-color: var(--bcolor-male-inan); font-variant-caps: petite-caps; font-size: small;}
+case-genetive-female-plural::after { content: "G\2640\2640"; vertical-align: super; color: var(--cr-Gen); background-color: var(--bcolor-female) ; font-variant-caps: petite-caps; font-size: small;}
+case-genetive-neuter-plural::after { content: "G\26A9\26A9"; vertical-align: super; color: var(--cr-Gen); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+case-dative-male-singular::after { content: "D\2642"; vertical-align: super; color: var(--cr-Dat); background-color: var(--bcolor-male-inan); font-variant-caps: petite-caps; font-size: small;}
+case-dative-female-singular::after { content: "D\2640"; vertical-align: super; color: var(--cr-Dat); background-color: var(--bcolor-female) ; font-variant-caps: petite-caps; font-size: small;}
+case-dative-neuter-singular::after { content: "D\26A9"; vertical-align: super; color: var(--cr-Dat); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+case-dative-male-plural::after { content: "D\2642\2640"; vertical-align: super; color: var(--cr-Dat); background-color: var(--bcolor-male-inan); font-variant-caps: petite-caps; font-size: small;}
+case-dative-female-plural::after { content: "D\2640\2640"; vertical-align: super; color: var(--cr-Dat); background-color: var(--bcolor-female) ; font-variant-caps: petite-caps; font-size: small;}
+case-dative-neuter-plural::after { content: "D\26A9\26A9"; vertical-align: super; color: var(--cr-Dat); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+case-accusative-male-thing-singular::after { content: "A\2642"; vertical-align: super; color: var(--cr-Acc); background-color: var(--bcolor-male-inan); font-variant-caps: petite-caps; font-size: small;}
+case-accusative-male-living-singular::after { content: "A\2642 Anim"; vertical-align: super; color: var(--cr-Acc); background-color: var(--bcolor-male-anima); font-variant-caps: petite-caps; font-size: small;}
+case-accusative-female-singular::after { content: "A\2640"; vertical-align: super; color: var(--cr-Acc); background-color: var(--bcolor-female) ; font-variant-caps: petite-caps; font-size: small;}
+case-accusative-neuter-singular::after { content: "A\26A9"; vertical-align: super; color: var(--cr-Acc); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+case-accusative-male-plural::after { content: "A\2642\2640"; vertical-align: super; color: var(--cr-Acc); background-color: var(--bcolor-male-inan); font-variant-caps: petite-caps; font-size: small;}
+case-accusative-female-plural::after { content: "A\2640\2640"; vertical-align: super; color: var(--cr-Acc); background-color: var(--bcolor-female) ; font-variant-caps: petite-caps; font-size: small;}
+case-accusative-neuter-plural::after { content: "A\26A9\26A9"; vertical-align: super; color: var(--cr-Acc); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+case-vocative-male-singular-hard::after { content: "V\2642\26A0"; vertical-align: super; color: var(--cr-Voc); background-color: var(--bcolor-male-inan); font-variant-caps: petite-caps; font-size: small;}
+case-vocative-male-singular-soft::after { content: "V\2642\2601"; vertical-align: super; color: var(--cr-Voc); background-color: var(--bcolor-male-inan); font-variant-caps: petite-caps; font-size: small;}case-vocative-female-singular::after { content: "V\2640"; vertical-align: super; color: var(--cr-Voc); background-color: var(--bcolor-female) ; font-variant-caps: petite-caps; font-size: small;}
+case-vocative-neuter-singular::after { content: "V\26A9"; vertical-align: super; color: var(--cr-Voc); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+case-vocative-male-plural::after { content: "V\2642\2640"; vertical-align: super; color: var(--cr-Voc); background-color: var(--bcolor-male-inan); font-variant-caps: petite-caps; font-size: small;}
+case-vocative-female-plural::after { content: "V\2640\2640"; vertical-align: super; color: var(--cr-Voc); background-color: var(--bcolor-female) ; font-variant-caps: petite-caps; font-size: small;}
+case-vocative-neuter-plural::after { content: "V\26A9\26A9"; vertical-align: super; color: var(--cr-Voc); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+case-locative-male-singular::after { content: "L\2642"; vertical-align: super; color: var(--cr-Loc); background-color: var(--bcolor-male-inan); font-variant-caps: petite-caps; font-size: small;}
+case-locative-female-singular::after { content: "L\2640"; vertical-align: super; color: var(--cr-Loc); background-color: var(--bcolor-female) ; font-variant-caps: petite-caps; font-size: small;}
+case-locative-neuter-singular::after { content: "L\26A9"; vertical-align: super; color: var(--cr-Loc); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+case-locative-male-plural::after { content: "L\2642\2640"; vertical-align: super; color: var(--cr-Loc); background-color: var(--bcolor-male-inan); font-variant-caps: petite-caps; font-size: small;}
+case-locative-female-plural::after { content: "L\2640\2640"; vertical-align: super; color: var(--cr-Loc); background-color: var(--bcolor-female) ; font-variant-caps: petite-caps; font-size: small;}
+case-locative-neuter-plural::after { content: "L\26A9\26A9"; vertical-align: super; color: var(--cr-Loc); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+case-instrumental-male-singular-hard::after { content: "I\2642\26A0"; vertical-align: super; color: var(--cr-Ins); background-color: var(--bcolor-male-inan); font-variant-caps: petite-caps; font-size: small;}
+case-instrumental-male-singular-soft::after { content: "I\2642\2601"; vertical-align: super; color: var(--cr-Ins); background-color: var(--bcolor-male-inan); font-variant-caps: petite-caps; font-size: small;}
+case-instrumental-female-singular::after { content: "I\2640"; vertical-align: super; color: var(--cr-Ins); background-color: var(--bcolor-female) ; font-variant-caps: petite-caps; font-size: small;}
+case-instrumental-neuter-singular::after { content: "I\26A9"; vertical-align: super; color: var(--cr-Ins); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+case-instrumental-male-plural::after { content: "I\2642\2640"; vertical-align: super; color: var(--cr-Ins); background-color: var(--bcolor-male-inan); font-variant-caps: petite-caps; font-size: small;}
+case-instrumental-female-plural::after { content: "I\2640\2640"; vertical-align: super; color: var(--cr-Ins); background-color: var(--bcolor-female) ; font-variant-caps: petite-caps; font-size: small;}
+case-instrumental-neuter-plural::after { content: "I\26A9\26A9"; vertical-align: super; color: var(--cr-Ins); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+
+
+adjective-superlative { color: var(--cr-superlative); font-weight: 600; }
+adjective-superlative:before { content: "Super"; vertical-align: super; color: var(--cr-superlative); background-color: var(--bcolor-female) ; font-variant-caps: petite-caps; font-size: small;}
+adjective-superlative-prefix:before { content: "Super"; vertical-align: super; color: var(--cr-superlative); background-color: var(--bcolor-female) ; font-variant-caps: petite-caps; font-size: small;}
+
+adjective-comparative, adjective-comparative-prefix { color: var(--color-male-anima); font-weight: 600; }
+adjective-comparative:after { content: "Comp"; vertical-align: super; color: var(--color-male-anima); font-variant-caps: petite-caps; font-size: small;}
+adjective-comparative-prefix:before { content: "Comp"; vertical-align: super; color: var(--color-male-anima); font-variant-caps: petite-caps; font-size: small;}
+
+
+adjective-nominative-male-singular-indefinite, 	adjective-nominative-male-singular-definite, 	adjective-nominative-female-singular, adjective-nominative-neuter-singular, adjective-nominative-male-plural, 	adjective-nominative-female-plural, 	adjective-nominative-neuter-plural  { color: var(--cr-Nom);font-weight: 600; }
+
+adjective-genetive-male-singular-indefinite,	adjective-genetive-male-singular-definite, 	adjective-genetive-female-singular, 	adjective-genetive-neuter-singular, 	adjective-genetive-neuter-singular-definite, 	adjective-genetive-neuter-singular-indefinite, adjective-genetive-male-plural, adjective-genetive-female-plural, 	adjective-genetive-neuter-plural { color: var(--cr-Gen);font-weight: 600;}
+
+adjective-dative-male-singular-indefinite,	adjective-dative-male-singular-definite, 	adjective-dative-female-singular, 	adjective-dative-neuter-singular, adjective-dative-neuter-singular-definite, adjective-dative-neuter-singular-indefinite adjective-dative-male-plural, 	adjective-dative-female-plural, 	adjective-dative-neuter-plural { color: var(--cr-Dat);font-weight: 600; }
+
+adjective-accusative-male-singular-indefinite, 	adjective-accusative-male-singular-definite, adjective-accusative-male-singular-indefinite-anim, 	adjective-accusative-male-singular-definite-anim, 	adjective-accusative-female-singular, 	adjective-accusative-neuter-singular, adjective-accusative-male-plural, 	adjective-accusative-female-plural, 	adjective-accusative-neuter-plural { color: var(--cr-Acc);font-weight: 600; }
+
+adjective-vocative-male-singular-indefinite,	adjective-vocative-male-singular-definite, 	adjective-vocative-female-singular, 	adjective-vocative-neuter-singular, adjective-vocative-male-plural, 	adjective-vocative-female-plural, 	adjective-vocative-neuter-plural { color: var(--cr-Voc); font-weight: 600;}
+
+adjective-locative-male-singular-indefinite,	adjective-locative-male-singular-definite, 	adjective-locative-female-singular, 	adjective-locative-neuter-singular, 	adjective-locative-neuter-singular-indefinite, 	adjective-locative-neuter-singular-definite, adjective-locative-male-plural, 	adjective-locative-female-plural, 	adjective-locative-neuter-plural { color: var(--cr-Loc);font-weight: 600;}
+
+adjective-instrumental-male-singular	,	adjective-instrumental-female-singular, 	adjective-instrumental-neuter-singular, adjective-instrumental-neuter-singular, adjective-instrumental-neuter-singular, adjective-instrumental-male-plural,	adjective-instrumental-female-plural, 	adjective-instrumental-neuter-plural { color: var(--cr-Ins);font-weight: 600; }
+
+
+adjective-nominative-male-singular-indefinite::after { content: "N\2642 ind"; vertical-align: super; color: var(--cr-Nom); background-color: var(--bcolor-male-inan); font-variant-caps: petite-caps; font-size: small;}
+adjective-nominative-male-singular-definite::after { content: "N\2642 def"; vertical-align: super; color: var(--cr-Nom); background-color: var(--bcolor-male-anima); font-variant-caps: petite-caps; font-size: small;}
+adjective-nominative-female-singular::after { content: "N\2640"; vertical-align: super; color: var(--cr-Nom); background-color: var(--bcolor-female) ; font-variant-caps: petite-caps; font-size: small;}
+adjective-nominative-neuter-singular::after { content: "N\26A9"; vertical-align: super; color: var(--cr-Nom); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+adjective-nominative-male-plural::after { content: "N\2642 ind"; vertical-align: super; color: var(--cr-Nom); background-color: var(--bcolor-male-inan); font-variant-caps: petite-caps; font-size: small;}
+adjective-nominative-female-plural::after { content: "N\2640\2640"; vertical-align: super; color: var(--cr-Nom); background-color: var(--bcolor-female) ; font-variant-caps: petite-caps; font-size: small;}
+adjective-nominative-neuter-plural::after { content: "N\26A9\26A9"; vertical-align: super; color: var(--cr-Nom); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+adjective-genetive-male-singular-indefinite::after { content: "G\2642 ind"; vertical-align: super; color: var(--cr-Gen); background-color: var(--bcolor-male-inan); font-variant-caps: petite-caps; font-size: small;}
+adjective-genetive-male-singular-definite::after { content: "G\2642 def"; vertical-align: super; color: var(--cr-Gen); background-color: var(--bcolor-male-anima); font-variant-caps: petite-caps; font-size: small;}
+adjective-genetive-female-singular::after { content: "G\2640"; vertical-align: super; color: var(--cr-Gen); background-color: var(--bcolor-female) ; font-variant-caps: petite-caps; font-size: small;}
+adjective-genetive-neuter-singular::after { content: "G\26A9"; vertical-align: super; color: var(--cr-Gen); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+adjective-genetive-neuter-singular-definite::after { content: "G\26A9 def"; vertical-align: super; color: var(--cr-Gen); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+adjective-genetive-neuter-singular-definite::after { content: "G\26A9 ind"; vertical-align: super; color: var(--cr-Gen); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+
+adjective-genetive-male-plural::after { content: "G\2642 ind"; vertical-align: super; color: var(--cr-Gen); background-color: var(--bcolor-male-inan); font-variant-caps: petite-caps; font-size: small;}
+adjective-genetive-female-plural::after { content: "G\2640\2640"; vertical-align: super; color: var(--cr-Gen); background-color: var(--bcolor-female) ; font-variant-caps: petite-caps; font-size: small;}
+adjective-genetive-neuter-plural::after { content: "G\26A9\26A9"; vertical-align: super; color: var(--cr-Gen); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+adjective-dative-male-singular-indefinite::after { content: "D\2642 ind"; vertical-align: super; color: var(--cr-Dat); background-color: var(--bcolor-male-inan); font-variant-caps: petite-caps; font-size: small;}
+adjective-dative-male-singular-definite::after { content: "D\2642 def"; vertical-align: super; color: var(--cr-Dat); background-color: var(--bcolor-male-anima); font-variant-caps: petite-caps; font-size: small;}
+adjective-dative-female-singular::after { content: "D\2640"; vertical-align: super; color: var(--cr-Dat); background-color: var(--bcolor-female) ; font-variant-caps: petite-caps; font-size: small;}
+adjective-dative-neuter-singular::after { content: "D\26A9"; vertical-align: super; color: var(--cr-Dat); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+adjective-dative-neuter-singular-definite::after { content: "D\26A9 def"; vertical-align: super; color: var(--cr-Dat); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+adjective-dative-neuter-singular-indefinite::after { content: "D\26A9 ind"; vertical-align: super; color: var(--cr-Dat); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+
+adjective-dative-male-plural::after { content: "D\2642 ind"; vertical-align: super; color: var(--cr-Dat); background-color: var(--bcolor-male-inan); font-variant-caps: petite-caps; font-size: small;}
+adjective-dative-female-plural::after { content: "D\2640\2640"; vertical-align: super; color: var(--cr-Dat); background-color: var(--bcolor-female) ; font-variant-caps: petite-caps; font-size: small;}
+adjective-dative-neuter-plural::after { content: "D\26A9\26A9"; vertical-align: super; color: var(--cr-Dat); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+
+adjective-accusative-male-singular-indefinite::after { content: "A\2642 ind"; vertical-align: super; color: var(--cr-Acc); background-color: var(--bcolor-male-inan); font-variant-caps: petite-caps; font-size: small;}
+adjective-accusative-male-singular-definite::after { content: "A\2642 def"; vertical-align: super; color: var(--cr-Acc); background-color: var(--bcolor-male-anima); font-variant-caps: petite-caps; font-size: small;}
+adjective-accusative-male-singular-indefinite-anim::after { content: "A\2642 ind anim"; vertical-align: super; color: var(--cr-Acc); background-color: var(--bcolor-male-inan); font-variant-caps: petite-caps; font-size: small;}
+adjective-accusative-male-singular-definite-anim::after { content: "A\2642 def anim"; vertical-align: super; color: var(--cr-Acc); background-color: var(--bcolor-male-anima); font-variant-caps: petite-caps; font-size: small;}
+adjective-accusative-female-singular::after { content: "A\2640"; vertical-align: super; color: var(--cr-Acc); background-color: var(--bcolor-female) ; font-variant-caps: petite-caps; font-size: small;}
+adjective-accusative-neuter-singular::after { content: "A\26A9"; vertical-align: super; color: var(--cr-Acc); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+adjective-accusative-male-plural::after { content: "A\2642 ind"; vertical-align: super; color: var(--cr-Acc); background-color: var(--bcolor-male-inan); font-variant-caps: petite-caps; font-size: small;}
+adjective-accusative-female-plural::after { content: "A\2640\2640"; vertical-align: super; color: var(--cr-Acc); background-color: var(--bcolor-female) ; font-variant-caps: petite-caps; font-size: small;}
+adjective-accusative-neuter-plural::after { content: "A\26A9\26A9"; vertical-align: super; color: var(--cr-Acc); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+
+adjective-vocative-male-singular-indefinite::after { content: "V\2642 ind"; vertical-align: super; color: var(--cr-Voc); background-color: var(--bcolor-male-inan); font-variant-caps: petite-caps; font-size: small;}
+adjective-vocative-male-singular-definite::after { content: "V\2642 def"; vertical-align: super; color: var(--cr-Voc); background-color: var(--bcolor-male-anima); font-variant-caps: petite-caps; font-size: small;}
+adjective-vocative-female-singular::after { content: "V\2640"; vertical-align: super; color: var(--cr-Voc); background-color: var(--bcolor-female) ; font-variant-caps: petite-caps; font-size: small;}
+adjective-vocative-neuter-singular::after { content: "V\26A9"; vertical-align: super; color: var(--cr-Voc); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+adjective-vocative-male-plural::after { content: "V\2642 ind"; vertical-align: super; color: var(--cr-Voc); background-color: var(--bcolor-male-inan); font-variant-caps: petite-caps; font-size: small;}
+adjective-vocative-female-plural::after { content: "V\2640\2640"; vertical-align: super; color: var(--cr-Voc); background-color: var(--bcolor-female) ; font-variant-caps: petite-caps; font-size: small;}
+adjective-vocative-neuter-plural::after { content: "V\26A9\26A9"; vertical-align: super; color: var(--cr-Voc); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+adjective-locative-male-singular-indefinite::after { content: "L\2642 ind"; vertical-align: super; color: var(--cr-Loc); background-color: var(--bcolor-male-inan); font-variant-caps: petite-caps; font-size: small;}
+adjective-locative-male-singular-definite::after { content: "L\2642 def"; vertical-align: super; color: var(--cr-Loc); background-color: var(--bcolor-male-anima); font-variant-caps: petite-caps; font-size: small;}
+adjective-locative-female-singular::after { content: "L\2640"; vertical-align: super; color: var(--cr-Loc); background-color: var(--bcolor-female) ; font-variant-caps: petite-caps; font-size: small;}
+adjective-locative-neuter-singular::after { content: "L\26A9"; vertical-align: super; color: var(--cr-Loc); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+adjective-locative-neuter-singular-definite::after { content: "L\26A9 def"; vertical-align: super; color: var(--cr-Loc); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+adjective-locative-neuter-singular-indefinite::after { content: "L\26A9 ind"; vertical-align: super; color: var(--cr-Loc); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+
+
+adjective-locative-male-plural::after { content: "L\2642 ind"; vertical-align: super; color: var(--cr-Loc); background-color: var(--bcolor-male-inan); font-variant-caps: petite-caps; font-size: small;}
+adjective-locative-female-plural::after { content: "L\2640\2640"; vertical-align: super; color: var(--cr-Loc); background-color: var(--bcolor-female) ; font-variant-caps: petite-caps; font-size: small;}
+adjective-locative-neuter-plural::after { content: "L\26A9\26A9"; vertical-align: super; color: var(--cr-Loc); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+adjective-instrumental-male-singular::after { content: "I\2642"; vertical-align: super; color: var(--cr-Ins); background-color: var(--bcolor-male-inan); font-variant-caps: petite-caps; font-size: small;}
+adjective-instrumental-female-singular::after { content: "I\2640"; vertical-align: super; color: var(--cr-Ins); background-color: var(--bcolor-female) ; font-variant-caps: petite-caps; font-size: small;}
+adjective-instrumental-neuter-singular::after { content: "I\26A9"; vertical-align: super; color: var(--cr-Ins); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+adjective-instrumental-male-plural::after { content: "I\2642 ind"; vertical-align: super; color: var(--cr-Ins); background-color: var(--bcolor-male-inan); font-variant-caps: petite-caps; font-size: small;}
+adjective-instrumental-female-plural::after { content: "I\2640\2640"; vertical-align: super; color: var(--cr-Ins); background-color: var(--bcolor-female) ; font-variant-caps: petite-caps; font-size: small;}
+adjective-instrumental-neuter-plural::after { content: "I\26A9\26A9"; vertical-align: super; color: var(--cr-Ins); background-color: var(--bcolor-neuter) ; font-variant-caps: petite-caps; font-size: small;}
+
+past-first-person-male-singular::after { content:"\2642"; vertical-align: super; color:var(--color-male-inan); background-color:var(--bcolor-male-inan);}
+past-first-person-female-singular::after { content:"\2640"; vertical-align: super; color:var(--color-female) ; background-color:var(--bcolor-female) ; }
+past-first-person-neuter-singular::after { content:"\26A9"; vertical-align: super; color:var(--color-neuter) ; background-color:var(--bcolor-neuter) ;}
+past-first-person-male-plural::after { content:"\2642\2640"; vertical-align: super; color:var(--color-male-inan); background-color:var(--bcolor-male-inan);}
+past-first-person-female-plural::after { content:"\2640\2640"; vertical-align: super; color:var(--olor-female) ; background-color:var(--bcolor-female) ;}
+past-first-person-neuter-plural::after { content:"\26A9\26A9"; vertical-align: super; color:var(--color-neuter) ; background-color:var(--bcolor-neuter) ;}
+past-second-person-male-singular::after { content:"\2642"; vertical-align: super; color:var(--color-male-inan); background-color:var(--bcolor-male-inan);}
+past-second-person-female-singular::after { content:"\2640"; vertical-align: super; color:var(--color-female) ; background-color:var(--bcolor-female) ;}
+past-second-person-neuter-singular::after { content:"\26A9"; vertical-align: super; color:var(--color-neuter) ; background-color:var(--bcolor-neuter) ;}
+past-second-person-male-plural::after { content:"\2642\2640"; vertical-align: super; color:var(--color-male-inan); background-color:var(--bcolor-male-inan);}
+past-second-person-female-plural::after { content:"\2640\2640"; vertical-align: super; color:var(--olor-female) ; background-color:var(--bcolor-female) ;}
+past-second-person-neuter-plural::after { content:"\26A9\26A9"; vertical-align: super; color:var(--color-neuter) ; background-color:var(--bcolor-neuter) ;}
+past-third-person-male-singular::after { content:"\2642"; vertical-align: super; color:var(--color-male-inan); background-color:var(--bcolor-male-inan);}
+past-third-person-female-singular::after { content:"\2640"; vertical-align: super; color:var(--color-female) ; background-color:var(--bcolor-female) ;}
+past-third-person-neuter-singular::after { content:"\26A9"; vertical-align: super; color:var(--color-neuter) ; background-color:var(--bcolor-neuter) ;}
+past-third-person-male-plural::after { content:"\2642\2640"; vertical-align: super; color:var(--color-male-inan); background-color:var(--bcolor-male-inan);}
+past-third-person-female-plural::after { content:"\2640\2640"; vertical-align: super; color:var(--olor-female) ; background-color:var(--bcolor-female) ;}
+past-third-person-neuter-plural::after { content:"\26A9\26A9"; vertical-align: super; color:var(--color-neuter) ; background-color:var(--bcolor-neuter) ;}
+
+
+past-first-person-male-singular, past-second-person-male-singular, past-third-person-male-singular, past-first-person-male-plural, past-second-person-male-plural, past-third-person-male-plural { color: var(--color-male-inan);font-weight: 600;background-color:var(--bcolor-past);}
+past-first-person-female-singular, past-second-person-female-singular, past-third-person-female-singular, past-first-person-female-plural, past-second-person-female-plural, past-third-person-female-plural { color: var(--color-female);font-weight: 600;background-color:var(--bcolor-past);}
+past-third-person-neuter-singular, 	past-third-person-neuter-plural { color: var(--color-neuter);font-weight: 600; text-decoration:wavy underline grey; background-color:var(--bcolor-past);}
+
+past-auxilary-verb, past-infinitive-base-form, slow {font-weight: 600; text-decoration:wavy underline grey; color: var(--color-past)}
+past-prefiksi {font-weight: 600; text-decoration:wavy underline grey; background-color:var(--bcolor-past); color: orange}
+past-adverb {font-weight: 600; color: var(--color-past)}
+past-adverb::after { content:"Adv"; vertical-align: super; color: var(--color-past); font-variant-caps: petite-caps; font-size: small;}
+
+present-first-person-singular, present-second-person-singular, present-third-person-singular, present-first-person-plural, present-second-person-plural, present-third-person-plural {font-weight: 600; text-decoration underline grey; background-color:var(--bcolor-present); color: var(--color-present)}
+
+future-auxilary-verb, future-infinitive {font-weight: 600; text-decoration:underline green; background-color:var(--bcolor-future); color: var(--color-future)}
+
+imperative, imperative-2nd-singular, imperative-1st-plural, imperative-2nd-plural {font-weight: 600; color: var(--color-imperative)}
+imperative::after { content:"Imp"; vertical-align: super; color:var(--color-imperative); font-size: x-small;}
+imperative-2nd-singular::after { content:"Imp2S"; vertical-align: super; color:var(--color-imperative) ; font-size: x-small;}
+imperative-3rd-singular::after { content:"Imp3S"; vertical-align: super; color:var(--color-imperative) ; font-size: x-small;}
+imperative-1st-plural::after { content:"Imp1P"; vertical-align: super; color:var(--color-imperative) ; font-size: x-small;}
+imperative-2nd-plural::after { content:"Imp2P"; vertical-align: super; color:var(--color-imperative) ;  font-size: x-small;}
+imperative-3rd-plural::after { content:"Imp3P"; vertical-align: super; color:var(--color-imperative) ;  font-size: x-small;}
+
+infinitive::after, future-infinitive::after { content: "inf"; vertical-align: super; color: var(--cr-Nom)); font-size: small;}
+
+adverb, adverb-g {font-weight: 600; color: var(--color-adverb)}
+adverb::after { content:"Adv"; vertical-align: super; color:var(--color-adverb); font-variant-caps: petite-caps; font-size: small;}
+adverb-g::after { content:"G Adv"; vertical-align: super; color:var(--cr-Gen) ; background-color:var(--bcolor-adverb) ; font-variant-caps: petite-caps; font-size: small;}
+
+irregular {font-weight: 600; color: red}
+irregular::after { content:"irr"; vertical-align: super; color:red) ; background-color:yellow ; font-size: small;}
+
+question {font-weight: 600; color:var(--cr-question);}
+question::after { content:"??"; vertical-align: super; color:var(--cr-question) ; font-size: small;}
+
+kondicional-present { color: var(--color-cond-present); font-size: small;}
+kondicional-present::after { content: "cond"; vertical-align: super; color: var(--color-cond-present); font-size: small;}
+
+kondicional-past { color: var(--color-cond-present); font-size: small;text-decoration:wavy underline grey; background-color:var(--bcolor-past);}
+kondicional-past::after { content: "cond past"; vertical-align: super; color: var(--color-cond-present); font-size: small; background-color:var(--bcolor-past);}
+
+verboraiz, gerundio-verboraiz {color: blue; }
+presente-terminacionpresente, presente-irregular {font-weight: 600; color: red; }
+preteritoperfecto-haber, preteritoperfecto-terminacionparticipopasado, preteritoperfecto-irregular {font-weight: 600; text-decoration:wavy underline grey; color: var(--color-past); }
+preteritoperfecto-terminacionparticipopasado::after, preteritoperfecto-irregular::after { content: "PP"; vertical-align: super; color: var(--color-past)); font-size: small;}
+
+preteritoimperfecto-terminacion, preteritoimperfecto-irregular {font-weight: 600; text-decoration:wavy underline grey; color: var(--color-past);}
+preteritoimperfecto-terminacion::after, preteritoimperfecto-irregular::after { content: "Imp"; vertical-align: super; color: var(--color-past)); font-size: small;}
+
+preteritoindefinido-terminacion, preteritoindefinido-irregular {font-weight: 600; text-decoration:wavy underline grey; color: var(--color-past);}
+preteritoindefinido-terminacion::after, preteritoindefinido-irregular::after { content: "Indef"; vertical-align: super; color: var(--color-past)); font-size: x-small;}
+
+Infinitivo { color: var(--cr-Nom); font-weight: 600;}
+Infinitivo::before { content: "inf"; vertical-align: super; color: var(--cr-Nom)); font-size: small;}
+
+futuroimperfecto-terminacion, futuroimperfecto-irregular {font-weight: 600; text-decoration:underline green; background-color:var(--bcolor-future); color: var(--color-future); }
+futuroinmediato-ir, futuroinmediato-a, futuroinmediato-infinitivo {font-weight: 600; text-decoration:underline green; background-color:var(--bcolor-future); color: var(--color-future); }
+
+gerundio-terminacion, gerundio-irregular {font-weight: 600; color: darkorange}
+gerundio-terminacion::after, gerundio-irregular::after { content:"Ger"; vertical-align: super; color: darkorange; font-variant-caps: petite-caps; font-size: small;}
+
+adverbio {font-weight: 600; color: var(--color-adverb); }
+adverbio::after { content:"Adv"; vertical-align: super; color:var(--color-adverb); font-variant-caps: petite-caps; font-size: small;}
+
+imperativo {font-weight: 600; color: var(--color-imperative)}
+imperativo::after { content:"Imp"; vertical-align: super; color:var(--color-imperative) ; font-size: x-small;}
+
+
+
+verberadical, gerondif-verberadical {color: blue; }
+present-terminaisonpresent, present-irregulier {font-weight: 600; color: red; }
+conditionnelpresent-terminaison, conditionnelpresent-irregulier, conditionnelpasse-auxiliaire, subjonctifpresent-terminaison, subjonctifpresent-irregulier {font-weight: 600; color: red; }
+subjonctifpresent-terminaison::after, subjonctifpresent-irregulier::after { content: "subj"; vertical-align: super; color: var(--color-cond-present); font-size: small;}
+conditionnelpresent-terminaison::after, conditionnelpresent-irregulier::after { content: "cond"; vertical-align: super; color: var(--color-cond-present); font-size: small;}
+
+passecompose-auxiliaire, passecompose-terminaisonparticipepasse, passecompose-irregulier {font-weight: 600; text-decoration:wavy underline grey; color: var(--color-past); }
+passecompose-terminaisonparticipepasse::after, passecompose-irregulier::after { content: "pc"; vertical-align: super; color: var(--color-past)); font-size: small;}
+
+imparfait-terminaison, imparfait-irregulier {font-weight: 600; text-decoration:wavy underline grey; color: var(--color-past);}
+imparfait-terminaison::after, imparfait-irregulier::after { content: "Imp"; vertical-align: super; color: var(--color-past)); font-size: small;}
+
+passesimple-terminaison, passesimple-irregulier {font-weight: 600; text-decoration:wavy underline grey; color: var(--color-past);}
+passesimple-terminaison::after, passesimple-irregulier::after { content: "p simpl"; vertical-align: super; color: var(--color-past)); font-size: x-small;}
+
+subjonctifpasse-auxiliaire, subjonctifpasse-terminaisonparticipepasse, subjonctifpasse-irregulier, conditionnelpasse-auxiliaire, conditionnelpasse-terminaisonparticipepasse, conditionnelpasse-irregulier {font-weight: 600; text-decoration:wavy underline grey; color: var(--color-cond-present);}
+conditionnelpasse-terminaisonparticipepasse::after, conditionnelpasse-irregulier::after { content: "p cond"; vertical-align: super; color: var(--color-cond-present); font-size: x-small;}
+subjonctifpasse-terminaisonparticipepasse::after, subjonctifpasse-irregulier::after { content: "p subj"; vertical-align: super; color: var(--color-cond-present); font-size: x-small;}
+
+infinitif { color: var(--cr-Nom); font-weight: 600;}
+infinitif::before { content: "inf"; vertical-align: super; color: var(--cr-Nom)); font-size: small;}
+
+futursimple-terminaison, futursimple-irregulier {font-weight: 600; text-decoration:underline green; background-color:var(--bcolor-future); color: var(--color-future); }
+futurproche-aller, futurproche-a, futurproche-infinitif {font-weight: 600; text-decoration:underline green; background-color:var(--bcolor-future); color: var(--color-future0); }
+
+gerondif-terminaison, gerondif-irregulier {font-weight: 600; color: darkorange}
+gerondif-terminaison::after, gerondif-irregulier:after { content:"Ger"; vertical-align: super; color: darkorange; font-variant-caps: petite-caps; font-size: small;}
+
+adverbe {font-weight: 600; color: var(--color-adverb); }
+adverbe::after { content:"Adv"; vertical-align: super; color:var(--color-adverb); font-variant-caps: petite-caps; font-size: small;}
+
+plusqueparfait-terminaisonparticipepasse, plusqueparfait-auxiliaire, plusqueparfait-irregulier {font-weight: 600; text-decoration:wavy underline grey; color: var(--color-past);}
+plusqueparfait-terminaisonparticipepasse::after, plusqueparfait-irregulier::after { content: "pcp"; vertical-align: super; color: var(--color-past)); font-size: x-small;}

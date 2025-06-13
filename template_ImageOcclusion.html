@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        {{ css }}
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+
+<table class="custom-table">
+    <tr>
+        <td>{{ fields['Header']|safe }}</td>
+    </tr>
+    <tr>
+        <td>{{ fields['Image']|safe }}</td>
+    </tr>
+</table>

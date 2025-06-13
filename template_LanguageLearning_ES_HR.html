@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        {{ css }}
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+{% if fields['picture1'] != "" and fields['picture2'] != "" and fields['picture3'] != "" and fields['picture4'] == "" %}
+    <table class="custom-table three-columns">
+        <tr>
+            <td colspan="3">{{ note_type }} - {{ card_type }}</td>
+        </tr>
+        <tr>
+            <td>{{ fields['ES-text1']|safe }}</td>
+            <td>{{ fields['ES-text2']|safe }}</td>
+            <td>{{ fields['ES-text3']|safe }}</td>
+        </tr>
+        <tr>
+            <td>{{ fields['HR-text1']|safe  }}</td>
+            <td>{{ fields['HR-text2']|safe  }}</td>
+            <td>{{ fields['HR-text3']|safe  }}</td>
+        </tr>
+        <tr>
+            <td>{{ fields['picture1']|safe }}</td>
+            <td>{{ fields['picture2']|safe }}</td>
+            <td>{{ fields['picture3']|safe }}</td>
+        </tr>
+    </table>
+{% endif %}
+
+{% if fields['picture1'] != "" and fields['picture2'] != "" and fields['picture3'] != "" and fields['picture4'] != "" and fields['picture5'] == "" %}
+
+    <table class="custom-table two-columns">
+        <tr>
+            <td colspan="2">{{ note_type }} - {{ card_type }}</td>
+        </tr>
+        <tr>
+            <td>{{ fields['ES-text1']|safe  }}</td>
+            <td>{{ fields['ES-text2']|safe  }}</td>
+        </tr>
+        <tr>
+            <td>{{ fields['HR-text1']|safe  }}</td>
+            <td>{{ fields['HR-text2']|safe  }}</td>
+        </tr>
+        <tr>
+            <td>{{ fields['picture1']|safe }}</td>
+            <td>{{ fields['picture2']|safe }}</td>
+        </tr>
+        <tr>
+            <td>{{ fields['ES-text3']|safe }}</td>
+            <td>{{ fields['ES-text4']|safe }}</td>
+        </tr>
+        <tr>
+            <td>{{ fields['HR-text3']|safe }}</td>
+            <td>{{ fields['HR-text4']|safe }}</td>
+        </tr>
+        <tr>
+            <td>{{ fields['picture3']|safe }}</td>
+            <td>{{ fields['picture4']|safe }}</td>
+        </tr>
+    </table>
+{% endif %}
+
+
+
+{% if fields['picture1'] != "" and fields['picture2'] != "" and fields['picture3'] != "" and fields['picture4'] != "" and fields['picture5'] != "" and fields['picture7'] == "" %}
+    <table class="custom-table three-columns">
+        <tr>
+            <td colspan="3">{{ note_type }} - {{ card_type }}</td>
+        </tr>
+        <tr>
+            <td>{{ fields['ES-text1']|safe }}</td>
+            <td>{{ fields['ES-text2']|safe }}</td>
+            <td>{{ fields['ES-text3']|safe }}</td>
+        </tr>
+        <tr>
+            <td>{{ fields['HR-text1']|safe }}</td>
+            <td>{{ fields['HR-text2']|safe }}</td>
+            <td>{{ fields['HR-text3']|safe }}</td>
+        </tr>
+        <tr>
+            <td>{{ fields['picture1']|safe }}</td>
+            <td>{{ fields['picture2']|safe }}</td>
+            <td>{{ fields['picture3']|safe }}</td>
+        </tr>
+        <tr>
+            <td>{{ fields['ES-text4']|safe }}</td>
+            <td>{{ fields['ES-text5']|safe }}</td>
+            <td>{{ fields['ES-text6']|safe }}</td>
+        </tr>
+        <tr>
+            <td>{{ fields['HR-text4']|safe  }}</td>
+            <td>{{ fields['HR-text5']|safe  }}</td>
+            <td>{{ fields['HR-text6']|safe  }}</td>
+        </tr>
+        <tr>
+            <td>{{ fields['picture4']|safe }}</td>
+            <td>{{ fields['picture5']|safe }}</td>
+            <td>{{ fields['picture6']|safe }}</td>
+        </tr>
+    </table>
+{% endif %}
+
+
+{% if fields['picture1'] != "" and fields['picture2'] != "" and fields['picture3'] != "" and fields['picture4'] != "" and fields['picture5'] != "" and fields['picture6'] != "" and fields['picture7'] != ""  %}
+    <table class="custom-table three-columns">
+        <tr>
+            <td colspan="4">{{ note_type }} - {{ card_type }}</td>
+        </tr>
+        <tr>
+            <td>{{ fields['ES-text1']|safe  }}</td>
+            <td>{{ fields['ES-text2']|safe  }}</td>
+            <td>{{ fields['ES-text3']|safe  }}</td>
+            <td>{{ fields['ES-text4']|safe  }}</td>
+        </tr>
+        <tr>
+            <td>{{ fields['HR-text1']|safe  }}</td>
+            <td>{{ fields['HR-text2']|safe  }}</td>
+            <td>{{ fields['HR-text3']|safe  }}</td>
+            <td>{{ fields['HR-text4']|safe  }}</td>
+        </tr>
+        <tr>
+            <td>{{ fields['picture1']|safe }}</td>
+            <td>{{ fields['picture2']|safe }}</td>
+            <td>{{ fields['picture3']|safe }}</td>
+            <td>{{ fields['picture4']|safe }}</td>
+        </tr>
+        <tr>
+            <td>{{ fields['ES-text5']|safe }}</td>
+            <td>{{ fields['ES-text6']|safe }}</td>
+            <td>{{ fields['ES-text7']|safe }}</td>
+            <td>{{ fields['ES-text8']|safe }}</td>
+        </tr>
+        <tr>
+            <td>{{ fields['HR-text5']|safe }}</td>
+            <td>{{ fields['HR-text6']|safe }}</td>
+            <td>{{ fields['HR-text7']|safe }}</td>
+            <td>{{ fields['HR-text8']|safe }}</td>
+        </tr>
+        <tr>
+            <td>{{ fields['picture5']|safe }}</td>
+            <td>{{ fields['picture6']|safe }}</td>
+            <td>{{ fields['picture7']|safe }}</td>
+            <td>{{ fields['picture8']|safe }}</td>
+        </tr>
+    </table>
+{% endif %}
+
