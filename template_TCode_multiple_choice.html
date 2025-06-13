@@ -18,44 +18,36 @@
     <table class="custom-table-left">
         <tr>
             <td>{{ fields['CardID']|safe }}</td>
-        </tr>
-        <tr>
             <td>{{ fields['QuestionEN']|safe }}</td>
-        </tr>
-        <tr>
             <td>{{ fields['TransactionNameEN']|safe }}</td>
         </tr>
+        {% if fields['TransactionDescriptionEN'] != "" %}
         <tr>
-            <td>{{ fields['TransactionDescriptionEN']|safe }}</td>
+            <td colspan="3">{{ fields['TransactionDescriptionEN']|safe }}</td>
         </tr>
+        {% endif %}
 
         {% if fields['Screen01'] != "" %}
         <tr>
-            <td>{{ fields['Screen01']|safe }}</td><td>{{ fields['Screen02']|safe }}</td>
+            <td>{{ fields['Screen01']|safe }}</td><td>{{ fields['Screen02']|safe }}<td>{{ fields['Screen03']|safe }}</td>
         </tr>
         {% endif %}
 
-        {% if fields['Screen03'] != "" %}
+        {% if fields['Screen04'] != "" %}
         <tr>
-            <td>{{ fields['Screen03']|safe }}</td><td>{{ fields['Screen04']|safe }}</td>
-        </tr>
-        {% endif %}
-
-        {% if fields['Screen05'] != "" %}
-        <tr>
-            <td>{{ fields['Screen05']|safe }}</td><td>{{ fields['Screen06']|safe }}</td>
+            <td>{{ fields['Screen04']|safe }}</td><td>{{ fields['Screen05']|safe }}</td><td>{{ fields['Screen06']|safe }}</td>
         </tr>
         {% endif %}
 
         {% if fields['Screen07'] != "" %}
         <tr>
-            <td>{{ fields['Screen07']|safe }}</td><td>{{ fields['Screen08']|safe }}</td>
+            <td>{{ fields['Screen07']|safe }}</td><td>{{ fields['Screen08']|safe }}</td><td>{{ fields['Screen09']|safe }}</td>
         </tr>
         {% endif %}
 
-        {% if fields['Screen09'] != "" %}
+        {% if fields['Screen10'] != "" %}
         <tr>
-            <td>{{ fields['Screen09']|safe }}</td><td>{{ fields['Screen10']|safe }}</td>
+            <td>{{ fields['Screen10']|safe }}</td><td>{{ fields['Screen11']|safe }}</td><td>{{ fields['Screen12']|safe }}</td>
         </tr>
         {% endif %}
 
