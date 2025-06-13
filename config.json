@@ -1,50 +1,93 @@
 {
-  "debug": true,
-  "resolution": [
-    2000,
-    2000
-  ],
-  "last_output_folder": "C:/Users/",
-  "replace_cloze": true,
-  "exclude_fields": [
-    "CommentAudio",
-    "CommentAudio-Slow",
-    "CommentAudio-ElevenLabs",
-    "Comment",
-    "HR-text-audio",
-    "FR-text-audio",
-    "ES-text-audio",
-    "RU-text-audio",
-    "ES-text-backup",
-    "FR-text-backup"
-  ],
-  "default_template": "default_template.html",
-  "default_css": "default_styles.css",
-  "note_card_templates": [
-    {
-      "note_type": "Basic",
-      "card_type": "Card 1",
-      "template": "template.html",
-      "css": "styles.css"
-    },
-    {
-      "note_type": "Cloze",
-      "card_type": "Card 1",
-      "template": "template.html",
-      "css": "styles.css"
-    },
-    {
-      "note_type": "Image Occlusion",
-      "card_type": "Image Occlusion",
-      "template": "template_ImageOcclusion.html",
-      "css": "styles.css"
-    },
-    {
-      "note_type": "Image Occlusion Enhanced",
-      "card_type": "IO Card",
-      "template": "template_ImageOcclusion.html",
-      "css": "styles.css"
-    }
-  ],
-  "auto_crop": false
+    "auto_crop": true,
+    "debug": false,
+    "default_css": "styles.css",
+    "default_template": "template.html",
+    "exclude_fields": [
+        "CommentAudio",
+        "CommentAudio-Slow",
+        "CommentAudio-ElevenLabs",
+        "Comment",
+        "HR-text-audio",
+        "FR-text-audio",
+        "ES-text-audio",
+        "RU-text-audio",
+        "ES-text-backup",
+        "FR-text-backup"
+    ],
+    "last_output_folder": "C:/Users/phili/OneDrive/Bilder/test",
+    "note_card_templates": [
+        {
+            "card_type": "Card 1",
+            "css": "styles.css",
+            "note_type": "Basic",
+            "template": "template.html"
+        },
+        {
+            "card_type": "Card 1",
+            "css": "styles.css",
+            "note_type": "Cloze",
+            "template": "template.html"
+        },
+        {
+            "card_type": "RU-HR",
+            "css": "styles_LanguageLearning.css",
+            "note_type": "LanguageLearning05",
+            "template": "template_LanguageLearning_RU_HR.html"
+        },
+        {
+            "card_type": "ES-HR",
+            "css": "styles_LanguageLearning.css",
+            "note_type": "LanguageLearning05",
+            "template": "template_LanguageLearning_ES_HR.html"
+        },
+        {
+            "card_type": "ES-FR",
+            "css": "styles_LanguageLearning.css",
+            "note_type": "LanguageLearning05",
+            "template": "template_LanguageLearning_ES_FR.html"
+        },
+        {
+            "card_type": "SingleChoice",
+            "css": "styles.css",
+            "note_type": "MultipleChoice",
+            "template": "template_multiple_choice.html"
+        },
+              {
+            "card_type": "SingleChoice",
+            "css": "styles.css",
+            "note_type": "SBF-MultipleChoice",
+            "template": "template_multiple_choice.html"
+        },
+              {
+            "card_type": "SingleChoice",
+            "css": "styles.css",
+            "note_type": "SBF-MultipleChoiceA9D7",
+            "template": "template_multiple_choice.html"
+        },
+        {
+            "card_type": "MultipleChoice1",
+            "css": "styles.css",
+            "note_type": "SBF-MultipleChoice(5A5D3S)",
+            "template": "template_multiple_choice.html"
+        },
+        {
+            "card_type": "EN",
+            "css": "styles.css",
+            "note_type": "SAP-MultipleChoice",
+            "template": "template_sap_multiple_choice.html"
+        }
+      ,
+        {
+            "card_type": "EN",
+            "css": "styles.css",
+            "note_type": "SAP-MultipleChoice",
+            "template": "template_sap_multiple_choice.html"
+        }
+    ],
+    "replace_cloze": true,
+    "resolution": [
+        2000,
+        2000
+    ]
 }

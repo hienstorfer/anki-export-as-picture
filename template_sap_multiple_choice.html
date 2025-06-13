@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        {{ css }}
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+
+    <table class="custom-table-left">
+        <tr>
+            <td>{{ fields['CardID']|safe }}</td>
+        </tr>
+        <tr>
+            <td>{{ fields['Question']|safe }}</td>
+        </tr>
+        <tr>
+            <td>
+            <ul>
+                <li>{{ fields['Answer1']|safe }}</li>
+                {% if fields.get('Answer2', '') != "" %}<li>{{ fields['Answer2']|safe }}</li>{% endif %}
+                {% if fields.get('Answer3', '') != "" %}<li>{{ fields['Answer3']|safe }}</li>{% endif %}
+                {% if fields.get('Answer4', '') != "" %}<li>{{ fields['Answer4']|safe }}</li>{% endif %}
+                {% if fields.get('Answer5', '') != "" %}<li>{{ fields['Answer5']|safe }}</li>{% endif %}
+                {% if fields.get('Answer6', '') != "" %}<li>{{ fields['Answer6']|safe }}</li>{% endif %}
+                {% if fields.get('Answer7', '') != "" %}<li>{{ fields['Answer7']|safe }}</li>{% endif %}
+                {% if fields.get('Answer8', '') != "" %}<li>{{ fields['Answer8']|safe }}</li>{% endif %}
+                {% if fields.get('Answer9', '') != "" %}<li>{{ fields['Answer9']|safe }}</li>{% endif %}
+                {% if fields.get('Answer10', '') != "" %}<li>{{ fields['Answer10']|safe }}</li>{% endif %}
+            </ul>
+            </td>
+        </tr>
+        {% if fields['Comment'] != "" %}
+            <tr>
+                <td>{{ fields['Comment']|safe }}</td>
+            </tr>
+        {% endif %}
+        {% if fields['TCode01'] != "" %}
+            <tr>
+                <td>{{ fields['TCode0']|safe }}</td>
+            </tr>
+        {% endif %}
+        {% if fields['Screen01'] != "" %}
+            <tr>
+                <td>{{ fields['Screen0']|safe }}</td>
+            </tr>
+        {% endif %}
+
+        {% if fields['TCode02'] != "" %}
+            <tr>
+                <td>{{ fields['TCode02']|safe }}</td>
+            </tr>
+        {% endif %}
+        {% if fields['Screen02'] != "" %}
+            <tr>
+                <td>{{ fields['Screen02']|safe }}</td>
+            </tr>
+        {% endif %}
+
+        {% if fields['TCode03'] != "" %}
+            <tr>
+                <td>{{ fields['TCode3']|safe }}</td>
+            </tr>
+        {% endif %}
+        {% if fields['Screen03'] != "" %}
+            <tr>
+                <td>{{ fields['Screen03']|safe }}</td>
+            </tr>
+        {% endif %}
+
+        {% if fields['TCode04'] != "" %}
+            <tr>
+                <td>{{ fields['TCode04']|safe }}</td>
+            </tr>
+        {% endif %}
+        {% if fields['Screen04'] != "" %}
+            <tr>
+                <td>{{ fields['Screen04']|safe }}</td>
+            </tr>
+        {% endif %}
+
+        {% if fields['TCode05'] != "" %}
+            <tr>
+                <td>{{ fields['TCode05']|safe }}</td>
+            </tr>
+        {% endif %}
+        {% if fields['Screen05'] != "" %}
+            <tr>
+                <td>{{ fields['Screen05']|safe }}</td>
+            </tr>
+        {% endif %}
+
+        {% if fields['TCode06'] != "" %}
+            <tr>
+                <td>{{ fields['TCode06']|safe }}</td>
+            </tr>
+        {% endif %}
+        {% if fields['Screen06'] != "" %}
+            <tr>
+                <td>{{ fields['Screen06']|safe }}</td>
+            </tr>
+        {% endif %}
+
+        {% if fields['TCode07'] != "" %}
+            <tr>
+                <td>{{ fields['TCode07']|safe }}</td>
+            </tr>
+        {% endif %}
+        {% if fields['Screen07'] != "" %}
+            <tr>
+                <td>{{ fields['Screen07']|safe }}</td>
+            </tr>
+        {% endif %}
+
+        {% if fields['TCode08'] != "" %}
+            <tr>
+                <td>{{ fields['TCode08']|safe }}</td>
+            </tr>
+        {% endif %}
+        {% if fields['Screen08'] != "" %}
+            <tr>
+                <td>{{ fields['Screen08']|safe }}</td>
+            </tr>
+        {% endif %}
+
+        {% if fields['TCode09'] != "" %}
+            <tr>
+                <td>{{ fields['TCode09']|safe }}</td>
+            </tr>
+        {% endif %}
+        {% if fields['Screen09'] != "" %}
+            <tr>
+                <td>{{ fields['Screen09']|safe }}</td>
+            </tr>
+        {% endif %}
+
+        {% if fields['TCode10'] != "" %}
+            <tr>
+                <td>{{ fields['TCode10']|safe }}</td>
+            </tr>
+        {% endif %}
+        {% if fields['Screen10'] != "" %}
+            <tr>
+                <td>{{ fields['Screen10']|safe }}</td>
+            </tr>
+        {% endif %}
+
+    </table>
