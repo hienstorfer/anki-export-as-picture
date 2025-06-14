@@ -95,6 +95,12 @@
             "css": "styles_LanguageLearning.css",
             "note_type": "HR-Verbs",
             "template": "template_HR_verbs.html"
+        },
+        {
+            "card_type": "perfekt",
+            "css": "styles_LanguageLearning.css",
+            "note_type": "HR-Verbs",
+            "template": "template_HR_verbs.html"
         }
     ],
     "replace_cloze": true,
