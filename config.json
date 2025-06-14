@@ -89,6 +89,12 @@
             "css": "styles.css",
             "note_type": "SAP-Transaction",
             "template": "template_TCode_multiple_choice.html"
+        },
+        {
+            "card_type": "present",
+            "css": "styles_LanguageLearning.css",
+            "note_type": "HR-verbs",
+            "template": "template_HR_verbs.html"
         }
     ],
     "replace_cloze": true,
