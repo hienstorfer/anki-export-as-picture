@@ -31,6 +31,12 @@
 
 <table class="verb-table">
     <tr>
+        <th  colspan="3">present</th>
+    </tr>
+    <tr>
+        <th  colspan="3">- {{ fields['infinitiv-E']|safe }} - <br> - {{ fields['infinitiv']|safe }}</th>
+    </tr>
+    <tr>
         <th></th>
         <th>Maskulinum/Femininum/Neutrum</th>
     </tr>
@@ -54,3 +60,36 @@
     </tr>
     {% endif %}
 </table>
+
+
+<br>
+
+
+
+<table class="verb-table">
+    <tr>
+        <th  colspan="3">perfect</th>
+    </tr>
+
+    <tr>
+        <th>Maskulinum</th>
+        <th>Femininum</th>
+        <th>Neutrum</th>
+    </tr>
+    {% set subjects = [
+        ('ja sam', 'o', 'la', ''),
+        ('ti si', 'o', 'la', ''),
+        ('on je', 'o', 'ona je', 'la', 'ono je', 'lo'),
+        ('mi smo', 'li', 'le', ''),
+        ('vi ste', 'li', 'le', ''),
+        ('oni su', 'li', 'one su', 'le', 'ona su', 'la')
+    ] %}
+    {% for row in subjects %}
+    <tr>
+        <td align="left">{{ row[0] }}&nbsp<span style="color:blue">{{ fields['infinitive-base-form']|safe }}</span><span style="color:red">{{ row[1] }}</span></td>
+        <td align="left">{{ row[2] }}&nbsp<span style="color:blue">{{ fields['infinitive-base-form']|safe }}</span><span style="color:red">{{ row[3] }}</span></td>
+        <td align="left">{% if row|length > 4 %}{{ row[4] }}&nbsp<span style="color:blue">{{ fields['infinitive-base-form']|safe }}</span><span style="color:red">{{ row[5] }}</span>{% endif %}</td>
+    </tr>
+    {% endfor %}
+</table>
+
