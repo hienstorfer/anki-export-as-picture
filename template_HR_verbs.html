@@ -15,32 +15,28 @@
     </style>
 </head>
 
-
-<table>
-    <tr>
-        <th colspan="2">- {{ fields['infinitiv-E']|safe }} (present) - <br> {{ fields['infinitiv']|safe }}</th>
-    </tr>
+<table class="custom-table">
     <tr>
         <th></th>
         <th>Maskulinum/Femininum/Neutrum</th>
     </tr>
     {% for subject, verb_form in {
-        'ja': present_m_sing_1,
-        'ti': present_m_sing_2,
-        'on/ona/ono': present_m_sing_3,
-        'mi': present_m_plural_1,
-        'vi': present_m_plural_2,
-        'oni/one/ona': present_m_plural_3
+        'ja': 'present-m-sing-1',
+        'ti': 'present-m-sing-2',
+        'on/ona/ono': 'present-m-sing-3',
+        'mi': 'present-m-plural-1',
+        'vi': 'present-m-plural-2',
+        'oni/one/ona': 'present-m-plural-3'
     }.items() %}
     <tr>
         <td align="left">{{ subject }}</td>
-        <td align="left">&nbsp{{ verb_form }}</td>
+        <td align="left">&nbsp{{ fields[verb_form]|safe }}</td>
     </tr>
     {% endfor %}
-    {% if aspect %}
+    {% if fields.get('aspect') %}
     <tr>
-        <td align="left">{{ aspect }}</td>
-        <td align="left">{{ aspect_explanation }}</td>
+        <td align="left">{{ fields['aspect']|safe }}</td>
+        <td align="left">{{ fields['aspect-explanation']|safe }}</td>
     </tr>
     {% endif %}
 </table>

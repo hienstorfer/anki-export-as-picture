@@ -93,7 +93,7 @@
         {
             "card_type": "present",
             "css": "styles_LanguageLearning.css",
-            "note_type": "HR-verbs",
+            "note_type": "HR-Verbs",
             "template": "template_HR_verbs.html"
         }
     ],
