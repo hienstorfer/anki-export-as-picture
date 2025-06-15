@@ -49,8 +49,8 @@
         'oni/one/ona': 'present-m-plural-3'
     }.items() %}
     <tr>
-        <td align="left">{{ subject }}</td>
-        <td align="left">&nbsp{{ fields[verb_form]|safe }}</td>
+        <td>{{ subject }}</td>
+        <td>&nbsp{{ fields[verb_form]|safe }}</td>
     </tr>
     {% endfor %}
     {% if fields.get('aspect') %}
@@ -59,8 +59,8 @@
         <td colspan="2">aspect</td>
     </tr>
     <tr>
-        <td align="left">{{ fields['aspect']|safe }}</td>
-        <td align="left">{{ fields['aspect-explanation']|safe }}</td>
+        <td>{{ fields['aspect']|safe }}</td>
+        <td>{{ fields['aspect-explanation']|safe }}</td>
     </tr>
     {% endif %}
 </table>
@@ -69,7 +69,7 @@
 <br>
 
 
-
+{% if fields['infinitive-base-form'] != "" }
 <table class="verb-table">
 
     <tr>
@@ -93,10 +93,63 @@
     ] %}
     {% for row in subjects %}
     <tr>
-        <td align="left">{{ row[0] }}&nbsp<span style="color:blue">{{ fields['infinitive-base-form']|safe }}</span><span style="color:red">{{ row[1] }}</span></td>
-        <td align="left">{{ row[2] }}&nbsp<span style="color:blue">{{ fields['infinitive-base-form']|safe }}</span><span style="color:red">{{ row[3] }}</span></td>
-        <td align="left">{% if row|length > 4 %}{{ row[4] }}&nbsp<span style="color:blue">{{ fields['infinitive-base-form']|safe }}</span><span style="color:red">{{ row[5] }}</span>{% endif %}</td>
+        <td>{{ row[0] }}&nbsp<span style="color:blue">{{ fields['infinitive-base-form']|safe }}</span><span style="color:red">{{ row[1] }}</span></td>
+        <td>{{ row[2] }}&nbsp<span style="color:blue">{{ fields['infinitive-base-form']|safe }}</span><span style="color:red">{{ row[3] }}</span></td>
+        <td>{% if row|length > 4 %}{{ row[4] }}&nbsp<span style="color:blue">{{ fields['infinitive-base-form']|safe }}</span><span style="color:red">{{ row[5] }}</span>{% endif %}</td>
     </tr>
     {% endfor %}
 </table>
+{% endif %}
 
+{% if fields['perfekt-f-sing'] != "" }
+<table class="verb-table">
+    <tr>
+        <th  colspan="3">- {{ fields['infinitiv-E']|safe }} - <br> - {{ fields['infinitiv']|safe }}</th>
+    </tr>
+    <tr>
+        <th  colspan="3">perfect</th>
+    </tr>
+  <tr>
+    <th></th>
+    <th>Maskulinum</th>
+    <th>Femininum</th>
+    <th>Neutrum</th>
+  </tr>
+  <tr>
+    <td>ja sam</td>
+    <td>&nbsp{{ fields['perfekt-m-sing']|safe }}</td>
+    <td>&nbsp{{ fields['perfekt-f-sing']|safe }}</td>
+    <td>&nbsp</td>
+  </tr>
+  <tr>
+    <td>ti si</td>
+    <td>&nbsp{{ fields['perfekt-m-sing']|safe }}</td>
+    <td>&nbsp{{ fields['perfekt-f-sing']|safe }}</td>
+    <td>&nbsp</td>
+  </tr>
+  <tr>
+    <td>on/ona/ono je</td>
+    <td>&nbsp{{ fields['perfekt-m-sing']|safe }}</td>
+    <td>&nbsp{{ fields['perfekt-f-sing']|safe }}</td>
+    <td>&nbsp{{ fields['perfekt-n-sing']|safe }}</td>
+  </tr>
+  <tr>
+    <td>mi smo</td>
+    <td>&nbsp{{ fields['perfekt-m-plural']|safe }}</td>
+    <td>&nbsp{{ fields['perfekt-f-plural']|safe }}</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>vi ste</td>
+    <td>&nbsp{{ fields['perfekt-m-plural']|safe }}</td>
+    <td>&nbsp{{ fields['perfekt-f-plural']|safe }}</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>oni/one/ona su</td>
+    <td>&nbsp{{ fields['perfekt-m-plural']|safe }}</td>
+    <td>&nbsp{{ fields['perfekt-f-plural']|safe }}</td>
+    <td>&nbsp{{ fields['perfekt-n-plural']|safe }}</td>
+  </tr>
+</table>
+{% endif %}
