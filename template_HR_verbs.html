@@ -54,6 +54,10 @@
     </tr>
     {% endfor %}
     {% if fields.get('aspect') %}
+
+    <tr>
+        <td colspan="2">aspect</td>
+    </tr>
     <tr>
         <td align="left">{{ fields['aspect']|safe }}</td>
         <td align="left">{{ fields['aspect-explanation']|safe }}</td>
