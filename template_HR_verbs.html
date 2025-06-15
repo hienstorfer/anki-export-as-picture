@@ -69,7 +69,7 @@
 <br>
 
 
-{% if fields['infinitive-base-form'] != "" %}
+{% if fields['infinitive-base-form'] != "" and fields['perfekt-f-sing'] == ""  %}
 <table class="verb-table">
     <tr>
         <th  colspan="3">- {{ fields['infinitiv-E']|safe }} - <br> - {{ fields['infinitiv']|safe }}</th>
