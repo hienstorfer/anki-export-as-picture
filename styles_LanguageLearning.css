@@ -639,7 +639,7 @@ infinitif { color: var(--cr-Nom); font-weight: 600;}
 infinitif::before { content: "inf"; vertical-align: super; color: var(--cr-Nom)); font-size: small;}
 
 futursimple-terminaison, futursimple-irregulier {font-weight: 600; text-decoration:underline green; background-color:var(--bcolor-future); color: var(--color-future); }
-futurproche-aller, futurproche-a, futurproche-infinitif {font-weight: 600; text-decoration:underline green; background-color:var(--bcolor-future); color: var(--color-future0); }
+futurproche-aller, futurproche-a, futurproche-infinitif {font-weight: 600; text-decoration:underline green; background-color:var(--bcolor-future); color: var(--color-future); }
 
 gerondif-terminaison, gerondif-irregulier {font-weight: 600; color: darkorange}
 gerondif-terminaison::after, gerondif-irregulier:after { content:"Ger"; vertical-align: super; color: darkorange; font-variant-caps: petite-caps; font-size: small;}
