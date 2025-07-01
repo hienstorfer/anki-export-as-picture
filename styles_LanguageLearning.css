@@ -13,7 +13,8 @@
 --color-person:orange;
 --color-imperative:orange;
 --color-adverb:green;
---cr-superlative: orange;
+--cr-comparative:#6495ED;
+--cr-superlative:#6495ED;
 --cr-question: brown;
 --color-cond-present: purple;
 
@@ -419,12 +420,12 @@ case-instrumental-neuter-plural::after { content: "I\26A9\26A9"; vertical-align:
 
 
 adjective-superlative { color: var(--cr-superlative); font-weight: 600; }
-adjective-superlative:before { content: "Super"; vertical-align: super; color: var(--cr-superlative); background-color: var(--bcolor-female) ; font-variant-caps: petite-caps; font-size: small;}
-adjective-superlative-prefix:before { content: "Super"; vertical-align: super; color: var(--cr-superlative); background-color: var(--bcolor-female) ; font-variant-caps: petite-caps; font-size: small;}
+adjective-superlative:before { content: "Super"; vertical-align: super; color: var(--cr-superlative); font-variant-caps: petite-caps; font-size: small;}
+adjective-superlative-prefix:before { content: "Super"; vertical-align: super; color: var(--cr-superlative) ; font-variant-caps: petite-caps; font-size: small;}
 
-adjective-comparative, adjective-comparative-prefix { color: var(--color-male-anima); font-weight: 600; }
-adjective-comparative:after { content: "Comp"; vertical-align: super; color: var(--color-male-anima); font-variant-caps: petite-caps; font-size: small;}
-adjective-comparative-prefix:before { content: "Comp"; vertical-align: super; color: var(--color-male-anima); font-variant-caps: petite-caps; font-size: small;}
+adjective-comparative, adjective-comparative-prefix { color: var(--cr-comparative); font-weight: 600; }
+adjective-comparative:after { content: "Comp"; vertical-align: super; color: var(--cr-comparative); font-variant-caps: petite-caps; font-size: small;}
+adjective-comparative-prefix:before { content: "Comp"; vertical-align: super; color: var(--cr-comparative); font-variant-caps: petite-caps; font-size: small;}
 
 
 adjective-nominative-male-singular-indefinite, 	adjective-nominative-male-singular-definite, 	adjective-nominative-female-singular, adjective-nominative-neuter-singular, adjective-nominative-male-plural, 	adjective-nominative-female-plural, 	adjective-nominative-neuter-plural  { color: var(--cr-Nom);font-weight: 600; }
