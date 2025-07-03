@@ -31,6 +31,13 @@
             <td>{{ fields['HR-text2']|safe  }}</td>
             <td>{{ fields['HR-text3']|safe  }}</td>
         </tr>
+        {% if fields['HR-exercise1'] != "" or fields['HR-exercise2'] != "" or fields['HR-exercise3'] != ""  %}
+        <tr>
+            <td>{{ fields['HR-exercise1']|safe  }}</td>
+            <td>{{ fields['HR-exercise2']|safe  }}</td>
+            <td>{{ fields['HR-exercise3']|safe  }}</td>
+        </tr>
+        {% endif %}
         <tr>
             <td>{{ fields['picture1']|safe }}</td>
             <td>{{ fields['picture2']|safe }}</td>
@@ -53,6 +60,12 @@
             <td>{{ fields['HR-text1']|safe  }}</td>
             <td>{{ fields['HR-text2']|safe  }}</td>
         </tr>
+        {% if fields['HR-exercise1'] != "" or fields['HR-exercise2'] != ""  %}
+        <tr>
+            <td>{{ fields['HR-exercise1']|safe  }}</td>
+            <td>{{ fields['HR-exercise2']|safe  }}</td>
+        </tr>
+        {% endif %}
         <tr>
             <td>{{ fields['picture1']|safe }}</td>
             <td>{{ fields['picture2']|safe }}</td>
@@ -65,6 +78,12 @@
             <td>{{ fields['HR-text3']|safe }}</td>
             <td>{{ fields['HR-text4']|safe }}</td>
         </tr>
+        {% if fields['HR-exercise3'] != "" or fields['HR-exercise4'] != ""  %}
+        <tr>
+            <td>{{ fields['HR-exercise3']|safe  }}</td>
+            <td>{{ fields['HR-exercise4']|safe  }}</td>
+        </tr>
+        {% endif %}
         <tr>
             <td>{{ fields['picture3']|safe }}</td>
             <td>{{ fields['picture4']|safe }}</td>
@@ -89,6 +108,13 @@
             <td>{{ fields['HR-text2']|safe }}</td>
             <td>{{ fields['HR-text3']|safe }}</td>
         </tr>
+        {% if fields['HR-exercise1'] != "" or fields['HR-exercise2'] != "" or fields['HR-exercise3'] != ""  %}
+        <tr>
+            <td>{{ fields['HR-exercise1']|safe  }}</td>
+            <td>{{ fields['HR-exercise2']|safe  }}</td>
+            <td>{{ fields['HR-exercise3']|safe  }}</td>
+        </tr>
+        {% endif %}
         <tr>
             <td>{{ fields['picture1']|safe }}</td>
             <td>{{ fields['picture2']|safe }}</td>
@@ -104,6 +130,13 @@
             <td>{{ fields['HR-text5']|safe  }}</td>
             <td>{{ fields['HR-text6']|safe  }}</td>
         </tr>
+        {% if fields['HR-exercise4'] != "" or fields['HR-exercise5'] != "" or fields['HR-exercise6'] != ""  %}
+        <tr>
+            <td>{{ fields['HR-exercise4']|safe  }}</td>
+            <td>{{ fields['HR-exercise5']|safe  }}</td>
+            <td>{{ fields['HR-exercise6']|safe  }}</td>
+        </tr>
+        {% endif %}
         <tr>
             <td>{{ fields['picture4']|safe }}</td>
             <td>{{ fields['picture5']|safe }}</td>
