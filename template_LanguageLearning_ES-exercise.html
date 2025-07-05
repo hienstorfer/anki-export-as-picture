@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        {{ css }}
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<table class="custom-table">
+    <thead>
+        <tr>
+            <th colspan="8">{{ fields['ES-exercise-create-card'] | safe }}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            {% if fields['ES-exercise1'] %}<td class="synonym-cell">{{ fields['ES-text1'] | safe }}</td>{% endif %}
+            {% if fields['ES-exercise2'] %}<td class="synonym-cell">{{ fields['ES-text2'] | safe }}</td>{% endif %}
+            {% if fields['ES-exercise3'] %}<td class="synonym-cell">{{ fields['ES-text3'] | safe }}</td>{% endif %}
+            {% if fields['ES-exercise4'] %}<td class="synonym-cell">{{ fields['ES-text4'] | safe }}</td>{% endif %}
+            {% if fields['ES-exercise5'] %}<td class="synonym-cell">{{ fields['ES-text5'] | safe }}</td>{% endif %}
+            {% if fields['ES-exercise6'] %}<td class="synonym-cell">{{ fields['ES-text6'] | safe }}</td>{% endif %}
+            {% if fields['ES-exercise7'] %}<td class="synonym-cell">{{ fields['ES-text7'] | safe }}</td>{% endif %}
+            {% if fields['ES-exercise8'] %}<td class="synonym-cell">{{ fields['ES-text8'] | safe }}</td>{% endif %}
+        </tr>
+        <tr>
+            {% if fields['ES-exercise1'] %}<td class="synonym-cell">{{ fields['ES-exercise1'] | safe }}</td>{% endif %}
+            {% if fields['ES-exercise2'] %}<td class="synonym-cell">{{ fields['ES-exercise2'] | safe }}</td>{% endif %}
+            {% if fields['ES-exercise3'] %}<td class="synonym-cell">{{ fields['ES-exercise3'] | safe }}</td>{% endif %}
+            {% if fields['ES-exercise4'] %}<td class="synonym-cell">{{ fields['ES-exercise4'] | safe }}</td>{% endif %}
+            {% if fields['ES-exercise5'] %}<td class="synonym-cell">{{ fields['ES-exercise5'] | safe }}</td>{% endif %}
+            {% if fields['ES-exercise6'] %}<td class="synonym-cell">{{ fields['ES-exercise6'] | safe }}</td>{% endif %}
+            {% if fields['ES-exercise7'] %}<td class="synonym-cell">{{ fields['ES-exercise7'] | safe }}</td>{% endif %}
+            {% if fields['ES-exercise8'] %}<td class="synonym-cell">{{ fields['ES-exercise8'] | safe }}</td>{% endif %}
+        </tr>
+        <tr>
+            {% if fields['ES-exercise1'] %}<td class="synonym-picture">{{ fields['picture1'] | safe }}</td>{% endif %}
+            {% if fields['ES-exercise2'] %}<td class="synonym-picture">{{ fields['picture2'] | safe }}</td>{% endif %}
+            {% if fields['ES-exercise3'] %}<td class="synonym-picture">{{ fields['picture3'] | safe }}</td>{% endif %}
+            {% if fields['ES-exercise4'] %}<td class="synonym-picture">{{ fields['picture4'] | safe }}</td>{% endif %}
+            {% if fields['ES-exercise5'] %}<td class="synonym-picture">{{ fields['picture5'] | safe }}</td>{% endif %}
+            {% if fields['ES-exercise6'] %}<td class="synonym-picture">{{ fields['picture6'] | safe }}</td>{% endif %}
+            {% if fields['ES-exercise7'] %}<td class="synonym-picture">{{ fields['picture7'] | safe }}</td>{% endif %}
+            {% if fields['ES-exercise8'] %}<td class="synonym-picture">{{ fields['picture8'] | safe }}</td>{% endif %}
+        </tr>
+    </tbody>
+</table>
+
+</body>

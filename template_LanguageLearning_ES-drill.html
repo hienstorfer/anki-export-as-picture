@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        {{ css }}
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<table class="custom-table">
+    <thead>
+        <tr>
+            <th colspan="8">{{ fields['ES-drill-create-card'] | safe }}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            {% if fields['ES-drill1'] %}<td class="synonym-cell">{{ fields['ES-text1'] | safe }}</td>{% endif %}
+            {% if fields['ES-drill2'] %}<td class="synonym-cell">{{ fields['ES-text2'] | safe }}</td>{% endif %}
+            {% if fields['ES-drill3'] %}<td class="synonym-cell">{{ fields['ES-text3'] | safe }}</td>{% endif %}
+            {% if fields['ES-drill4'] %}<td class="synonym-cell">{{ fields['ES-text4'] | safe }}</td>{% endif %}
+            {% if fields['ES-drill5'] %}<td class="synonym-cell">{{ fields['ES-text5'] | safe }}</td>{% endif %}
+            {% if fields['ES-drill6'] %}<td class="synonym-cell">{{ fields['ES-text6'] | safe }}</td>{% endif %}
+            {% if fields['ES-drill7'] %}<td class="synonym-cell">{{ fields['ES-text7'] | safe }}</td>{% endif %}
+            {% if fields['ES-drill8'] %}<td class="synonym-cell">{{ fields['ES-text8'] | safe }}</td>{% endif %}
+        </tr>
+        <tr>
+            {% if fields['ES-drill1'] %}<td class="synonym-cell">{{ fields['ES-drill1'] | safe }}</td>{% endif %}
+            {% if fields['ES-drill2'] %}<td class="synonym-cell">{{ fields['ES-drill2'] | safe }}</td>{% endif %}
+            {% if fields['ES-drill3'] %}<td class="synonym-cell">{{ fields['ES-drill3'] | safe }}</td>{% endif %}
+            {% if fields['ES-drill4'] %}<td class="synonym-cell">{{ fields['ES-drill4'] | safe }}</td>{% endif %}
+            {% if fields['ES-drill5'] %}<td class="synonym-cell">{{ fields['ES-drill5'] | safe }}</td>{% endif %}
+            {% if fields['ES-drill6'] %}<td class="synonym-cell">{{ fields['ES-drill6'] | safe }}</td>{% endif %}
+            {% if fields['ES-drill7'] %}<td class="synonym-cell">{{ fields['ES-drill7'] | safe }}</td>{% endif %}
+            {% if fields['ES-drill8'] %}<td class="synonym-cell">{{ fields['ES-drill8'] | safe }}</td>{% endif %}
+        </tr>
+        <tr>
+            {% if fields['ES-drill1'] %}<td class="synonym-picture">{{ fields['picture1'] | safe }}</td>{% endif %}
+            {% if fields['ES-drill2'] %}<td class="synonym-picture">{{ fields['picture2'] | safe }}</td>{% endif %}
+            {% if fields['ES-drill3'] %}<td class="synonym-picture">{{ fields['picture3'] | safe }}</td>{% endif %}
+            {% if fields['ES-drill4'] %}<td class="synonym-picture">{{ fields['picture4'] | safe }}</td>{% endif %}
+            {% if fields['ES-drill5'] %}<td class="synonym-picture">{{ fields['picture5'] | safe }}</td>{% endif %}
+            {% if fields['ES-drill6'] %}<td class="synonym-picture">{{ fields['picture6'] | safe }}</td>{% endif %}
+            {% if fields['ES-drill7'] %}<td class="synonym-picture">{{ fields['picture7'] | safe }}</td>{% endif %}
+            {% if fields['ES-drill8'] %}<td class="synonym-picture">{{ fields['picture8'] | safe }}</td>{% endif %}
+        </tr>
+    </tbody>
+</table>
+
+</body>

@@ -60,10 +60,22 @@
             "template": "template_LanguageLearning_HR-exercise.html"
         },
         {
+            "card_type": "ES-exercise",
+            "css": "styles_LanguageLearning.css",
+            "note_type": "LanguageLearning05",
+            "template": "template_LanguageLearning_ES-exercise.html"
+        },
+        {
             "card_type": "HR-exercise-reverse",
             "css": "styles_LanguageLearning.css",
             "note_type": "LanguageLearning05",
             "template": "template_LanguageLearning_HR-exercise.html"
+        },
+        {
+            "card_type": "ES-exercise-reverse",
+            "css": "styles_LanguageLearning.css",
+            "note_type": "LanguageLearning05",
+            "template": "template_LanguageLearning_ES-exercise.html"
         },
         {
             "card_type": "SingleChoice",
