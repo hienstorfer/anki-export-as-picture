@@ -48,6 +48,24 @@
             "template": "template_LanguageLearning_ES_FR.html"
         },
         {
+            "card_type": "HR-drill",
+            "css": "styles_LanguageLearning.css",
+            "note_type": "LanguageLearning05",
+            "template": "template_LanguageLearning_HR-drill.html"
+        },
+        {
+            "card_type": "HR-exercise",
+            "css": "styles_LanguageLearning.css",
+            "note_type": "LanguageLearning05",
+            "template": "template_LanguageLearning_HR-exercise.html"
+        },
+        {
+            "card_type": "HR-exercise-reverse",
+            "css": "styles_LanguageLearning.css",
+            "note_type": "LanguageLearning05",
+            "template": "template_LanguageLearning_HR-exercise.html"
+        },
+        {
             "card_type": "SingleChoice",
             "css": "styles.css",
             "note_type": "MultipleChoice",
