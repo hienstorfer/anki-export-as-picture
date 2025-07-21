@@ -117,7 +117,7 @@
 {% if fields['picture1'] != "" and fields['picture2'] != "" and fields['picture3'] != "" and fields['picture4'] != "" and fields['picture5'] != "" and fields['picture6'] != "" and fields['picture7'] != ""  %}
     <table class="custom-table three-columns">
         <tr>
-            <td colspan="4">{{ note_type }} - {{ card_type }}</td>
+            <td colspan="4">{{ fields['CardID']|safe }}:{{ card_type }}</td>
         </tr>
         <tr>
             <td>{{ fields['ES-text1']|safe  }}</td>
